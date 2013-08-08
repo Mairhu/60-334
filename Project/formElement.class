@@ -1,0 +1,298 @@
+<?php
+
+/*This is file that contains the classes to generate html for 
+**the different form elements. The elements include:
+	- Input Field
+	- Text Area
+	- Dropdown
+	- checkbox
+	- radio
+	- button
+	
+All these classes pull their similar characteristics from the 
+formElement class, and then have specific settings for their own
+special cases.
+
+This file was created by Ping S. Yong on 06/08/13.
+A demo of these elements can be seen by running test.php
+*/
+
+include_once("constants.php");
+include_once("common.php");
+
+class formElement{
+	protected $_strName;
+	protected $_strID;
+	protected $_strClass;
+	protected $_defaultValue;
+	protected $_arrAttribute;
+
+	function formElement($strName, $strID){
+		$this->_strName = $strName;
+		$this->_strID = $strID;
+		$this->_arrAttribute = array();
+	}
+	
+	function getName(){
+		return $this->_strName;
+	}
+	
+	function setName($strName){
+		$this->_strName = $strName;
+	}
+	
+	function getID(){
+		return $this->_strID;
+	}
+	
+	function setID($strID){
+		$this->_strID = $strID;
+	}	
+	
+	function getClass(){
+		return $this->_strClass;
+	}
+	
+	function setClass($strClass){
+		$this->_strClass = $strClass;
+	}		
+	
+	function getValue(){
+		return $this->_defaultValue;
+	}
+	
+	function setValue($defaultValue){
+		$this->_defaultValue = $defaultValue;
+	}	
+	
+	function getAttribute($strAttr=null){
+		if(isset($strAttr)){
+			return $this->_arrAttribute[$strAttr];
+		}
+		return $this->_arrAttribute;
+	}
+	
+	function setAttribute($strAttribute, $strValue=null){
+		$this->_arrAttribute[$strAttribute] = $strValue;
+	}
+	
+}
+
+class input extends formElement{
+	
+	function input($strName, $strID){
+		$this->formElement($strName, $strID);
+	}
+	
+	function toHTML(){
+		$strHTML = "<input type=\"text\" 
+							name=\"" . $this->getName() . "\"
+							id=\"" . $this->getID() . "\"
+							class=\"" . $this->getClass() . "\"
+							value=\"" . $this->getValue() . "\"";
+		foreach($this->_arrAttribute as $attr=>$val){
+			$strHTML .= " " . $attr;
+			if(isset($val)){
+				$strHTML .= "=\"" . $val . "\"";
+			}
+		}
+		$strHTML .= " />";
+		
+		return $strHTML;
+	}
+}
+
+class textArea extends formElement{
+
+	function textArea($strName, $strID){
+		$this->formElement($strName, $strID);
+	}
+	
+	function toHTML(){
+		$strHTML = "<textarea 
+							name=\"" . $this->getName() . "\"
+							id=\"" . $this->getID() . "\"
+							class=\"" . $this->getClass() . "\" ";
+		foreach($this->_arrAttribute as $attr=>$val){
+			$strHTML .= " " . $attr;
+			if(isset($val)){
+				$strHTML .= "=\"" . $val . "\"";
+			}
+		}
+		$strHTML .= ">" . $this->getValue() . "</textArea>";
+		
+		return $strHTML;
+	}
+	
+}
+
+class dropDown extends formElement{
+	private $_arrOptions;
+	private $_blnBlankOption;
+	
+	function dropDown($strName, $strID, $blnAddBlank=true){
+		$this->formElement($strName, $strID);
+		$this->_blnBlankOption = $blnAddBlank;
+		$this->_arrOptions = array();
+	}
+	
+	function getOptions(){
+		return $this->_arrOptions;
+	}	
+	
+	function setOptions($arrOptions){
+		if(getArrayDepth($arrOptions) == 2){
+			$this->_arrOptions = $arrOptions;
+		}
+		
+		else if(getArrayDepth($arrOptions) == 1){
+			$this->_arrOptions = array();
+			
+			foreach($arrOptions as $val){
+				$this->_arrOptions[$val] = $val;
+			}
+		}
+		else{
+			echo "There seems to be an error with the given array. Please try again. Dropdown error 1";
+		}
+	}
+	
+	function toHTML(){
+		$strHTML = "<select 
+							name=\"" . $this->getName() . "\"
+							id=\"" . $this->getID() . "\"
+							class=\"" . $this->getClass() . "\">";
+		
+		if($this->_blnBlankOption){
+			$strHTML .= "<option value=\"\"/>";
+		}
+		
+		foreach($this->_arrOptions as $hidden=>$display){
+			if($hidden == $this->getValue()){
+				$strSelected = "selected";
+			}
+			else{
+				$strSelected = "";
+			}
+			
+			$strHTML .= "<option value=\"" .  $hidden . "\" " . $strSelected . ">" . $display . "</option>";
+		}
+		
+		$strHTML .= "</select>";
+		return $strHTML;
+	}
+	
+}
+
+class checkbox extends formElement{
+	private $_blnChecked;
+
+	function checkbox($strName, $strID, $blnChecked=false){
+		$this->formElement($strName, $strID);
+		$this->_blnChecked = $blnChecked;
+	}
+	
+	function toHTML(){
+		$strHTML = "<input type=\"checkbox\" 
+							name=\"" . $this->getName() . "\"
+							id=\"" . $this->getID() . "\"
+							class=\"" . $this->getClass() . "\"
+							value=\"" . $this->getValue() . "\"";
+							
+		foreach($this->_arrAttribute as $attr=>$val){
+			$strHTML .= " " . $attr;
+			if(isset($val)){
+				$strHTML .= "=\"" . $val . "\"";
+			}
+		}
+		if($this->_blnChecked){
+			$strHTML .= " checked ";
+		}
+		$strHTML .= " />";
+		
+		return $strHTML;
+	}
+}
+
+class radio extends formElement{
+	private $_blnChecked;
+	
+	function radio($strName, $strID, $blnChecked=false){	
+		$this->formElement($strName, $strID);
+		$this->_blnChecked = $blnChecked;
+	}
+	
+	function toHTML(){
+		$strHTML = "<input type=\"radio\" 
+							name=\"" . $this->getName() . "\"
+							id=\"" . $this->getID() . "\"
+							class=\"" . $this->getClass() . "\"
+							value=\"" . $this->getValue() . "\"";
+							
+		foreach($this->_arrAttribute as $attr=>$val){
+			$strHTML .= " " . $attr;
+			if(isset($val)){
+				$strHTML .= "=\"" . $val . "\"";
+			}
+		}
+		if($this->_blnChecked){
+			$strHTML .= " checked ";
+		}
+		$strHTML .= " />";
+		
+		return $strHTML;
+	}
+}
+
+class button extends formElement{
+	private $_strAction;
+	private $_strMethod;
+	
+	function button($strName, $strID){	
+		$this->formElement($strName, $strID);
+	}
+	
+	function getAction(){
+		return $this->_strAction;
+	}
+	
+	function setAction($strAction){
+		$this->_strAction = $strAction;
+	}
+	
+	function getMethod(){
+		return $this->_strMethod;
+	}
+	
+	function setMethod($strMethod){
+		$this->_strMethod = $strMethod;
+	}
+	
+	function toHTML(){
+		$strHTML = "<input type=\"submit\" 
+							name=\"" . $this->getName() . "\"
+							id=\"" . $this->getID() . "\"
+							class=\"" . $this->getClass() . "\"
+							value=\"" . $this->getValue() . "\"";
+							
+		foreach($this->_arrAttribute as $attr=>$val){
+			$strHTML .= " " . $attr;
+			if(isset($val)){
+				$strHTML .= "=\"" . $val . "\"";
+			}
+		}
+		if(isset($this->_strAction)){
+			$strHTML .= " action=\"" . $this->_strAction . "\"";
+		}
+		if(isset($this->strMethod)){
+			$strHTML .= " method=\"" . $this->_strMethod . "\"";
+		}
+		$strHTML .= " />";
+		
+		return $strHTML;
+	}
+	
+}
+
+
+?>

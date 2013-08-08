@@ -1,0 +1,214 @@
+Category,Number,Name,Description,Price,Size,Spicy
+Appetizer,1,Thai style Mango Sauce Deep Fried Tofu,,6.95,,
+Appetizer,2,Thai Style Deep Fried Chicken Wings (12 pcs),,7.95,,
+Appetizer,3,Deep Fried Chicken Wings with Honey Garlic Sauce (12 pcs),,8.95,,
+Appetizer,4,Deep fried Golden Shrimp balls (3 pcs),,5.95,,
+Appetizer,5,Thai Style Deep Fried Shrimp Balls (3 pcs),,8.95,,
+Appetizer,6,Thai Style Lettuce Wraps Chicken,,9.95,,
+Appetizer,7,Grilled Slices Pork Jowl,,11.95,,
+Appetizer,8,Thai Style Deep Fried Spring Rolls (2 pcs),,2.95,,
+Appetizer,9,Thai Style Mango Salad with Shrimp (6 Shrimps),,7.95,,
+Appetizer,10,Cheese Rangoons (6 pcs),,4.95,,
+Appetizer,11,Roti Canai (Crispy pancake with curry Lentil) (3 pcs),,6.95,,1
+Appetizer,12,A Tropical Pickled Vegetable with Varity Spicy Herbs,,4.95,,1
+Appetizer,13,Spicy Soft-shell Crab (1 pcs),,5.95,,1
+Appetizer,14,Mussel with Black Bean Sauce,,8.95,,
+Appetizer,15,Satay Chicken (Choice of 6 sticks),Served with Peanut Satay Sauce,6.95,,1
+Appetizer,16,Satay Beef  (Choice of 6 sticks),Served with Peanut Satay Sauce,6.95,,1
+Appetizer,17,Treasure Platter,"2 Spring Rolls, 3 Satay Chicken Skewers, 
+3 Satay Beef Skewers, 4 Cheese Rangoons 
+and 4 Deep Fried Chicken Wings",16.95,,
+Soup,1,Vegetable Chicken Won Ton Soup,,3.5,Small,
+Soup,1,Vegetable Chicken Won Ton Soup,,9.95,Large,
+Soup,2,Mushroom Chicken Egg Drop Soup,,3.5,Small,
+Soup,2,Mushroom Chicken Egg Drop Soup,,9.95,Large,
+Soup,3,Thai Style Tom Yum Shrimp Soup,,4.5,Small,1
+Soup,3,Thai Style Tom Yum Shrimp Soup,,9.95,Large,1
+Soup,4,Mushroom with Minced Beef Egg Drop Soup,,3.5,Small,
+Soup,4,Mushroom with Minced Beef Egg Drop Soup,,9.95,Large,
+Soup,5,Sweet Corn Chicken Thick Soup,,3.5,Small,
+Soup,5,Sweet Corn Chicken Thick Soup,,9.95,Large,
+Soup,6,Malaysia Chinese Herbs Soup with Pork Ribs,,9.95,,
+Soup,7,Tomato Vegetable Tofu Soup,,3.5,Small,
+Soup,7,Tomato Vegetable Tofu Soup,,8.95,Large,
+Soup,8,Crab Meat with Fish Maw Soup,,4.95,Small,
+Soup,8,Crab Meat with Fish Maw Soup,,10.95,Large,
+Noodle Soup,1,Malaysia Style Curry Chicken Rice Noodle Soup,,7.95,,1
+Noodle Soup,2,Thai Style Shrimp and Chicken Rice Vermicelli Soup,,7.95,,1
+Noodle Soup,3,Malaysia Style Coconut Hot & Sour Rice Noodle Soup,,7.95,,1
+Noodle Soup,4,Beef Brisket Shanghai Noodle Soup,,7.95,,
+Noodle Soup,5,Yang Chow E-Fu Noodle Soup,,12.95,Large,
+Noodle Soup,6,Crab Mear E-Fu Noodle Soup,,12.95,Large,
+Seafood Dishes,1,Seafood Bird`s Nest,,14.95,,
+Seafood Dishes,2,Mango Sauce Deep Fried Fish Fillet,,9.95,,
+Seafood Dishes,3,Assorted Mushrooms with Fish Fillet,,13.95,,
+Seafood Dishes,4,Deep Fried Dish Fillet with Cream Corn Sauce,,8.95,,
+Seafood Dishes,5,Sweet & Sour Deep fried fish Fillet,,8.95,,
+Seafood Dishes,6,Fish Fillet with Spicy Salt,,8.95,,
+Seafood Dishes,7,Thai Style Mango Sauce Shrimp,,11.95,,
+Seafood Dishes,8,Cheese Rangoon with Deep Fried Shrimp Balls,,13.95,,
+Seafood Dishes,9,Shrimp in Sweet Bean Sauce,,13.95,,
+Seafood Dishes,10,Shrimp and Bitter Melon with Special Sauce,,12.95,,
+Seafood Dishes,11,Fish Fillet with Deep Fried Tofu Hot Pot,,8.95,,
+Seafood Dishes,12,Wind & Sand Deep Fried Shrimp,,13.95,,
+Seafood Dishes,13,Mussel Cooked with White Wine,,11.95,,
+Seafood Dishes,14,Seafood with Deep Fried Tofu Hot Pot,,11.95,,
+Seafood Dishes,15,Spicy Salt Shrimps (No Shell),,11.95,,
+Seafood Dishes,16,Spicy Salt Squid,,8.95,,
+Seafood Dishes,17,Spicy Salt Seafood,,13.95,,
+Seafood Dishes,18,Xo Sauce Celery Seafood,,13.95,,
+Seafood Dishes,19,Seafood with Vegetable,,13.95,,
+Seafood Dishes,20,Shrimp and Chicken in Bird`s Nest,,13.95,,
+Seafood Dishes,21,Coconut Cream Sauce Taro Shrimp Hot Pot,,13.95,,
+Seafood Dishes,22,Shrimp with Scrambled Eggs,,9.95,,
+Seafood Dishes,23,Shrimp with Giner & Green Onion in Maggi Sauce,,11.95,,
+Seafood Dishes,24,Spicy Salt Shrimp with Shell,,10.95,,
+Seafood Dishes,25,Shrimp and Eggplant with Garlic Hunan Sauce,,11.95,,
+Seafood Dishes,26,Small Silver Fish with Green Beans,,8.95,,
+Seafood Dishes,27,Deep Fried Breaded Shrimp,,9.95,,
+Chicken Dishes,1,Thai Style Mango Chicken,,9.95,,
+Chicken Dishes,2,Chicken & Mushroom with Dry Garlic in Hot Plate,,11.95,,
+Chicken Dishes,3,Malaysia Style Curry Chicken (with Bone),,9.95,,1
+Chicken Dishes,4,Spicy Chicken with Bean Sauce in Hot Plate,,11.95,,1
+Chicken Dishes,5,Chicken with Bean Sauce in Hot Pot,,11.95,,
+Chicken Dishes,6,Chicken with Ginger & Honeu Pepper Sauce in Hot Pot,,11.95,,
+Chicken Dishes,7,Thai Style Basil Leaf Stir Fried Chicken,,13.95,,
+Chicken Dishes,8,Sliced Chicken witn Bean Sauce Cooked in Hot Plate,,10.95,,
+Chicken Dishes,9,General Tao`s Chicken,,9.95,,1
+Chicken Dishes,10,Stir Fried Chicken with Chashew Nuts & Vegetables,,9.95,,
+Chicken Dishes,11,Diced Chicken with Hot Bean Sauce,,9.95,,1
+Chicken Dishes,12,Fresh Fruit Sweet and Sour Chicken,,9.95,,
+Chicken Dishes,13,Stir Fried Chicken with Vegetable,,8.95,,
+Chicken Dishes,14,Chicken with Black Bean Sauce,,8.95,,
+Chicken Dishes,15,Braised Chicken (with bone) & Sliced Taro in Hot Pot,,11.95,,
+Chicken Dishes,16,Chicken and Assorted Mushrooms with XO Sauce,,12.95,,
+Chicken Dishes,17,Chicken in Bird`s Nest,,11.95,,
+Side Order,1,Steamed White Rice,,1.2,,
+Side Order,2,Hainanese Rice,,2,,
+Side Order,3,Coconut Rice,,2,,
+Beef Dishes,1,Diced Sirlon Steak & Mushroom with Dry Garlic in Hot Plate,,13.95,,
+Beef Dishes,2,Diced Sirloin Steak with Garlic Honey Pepper Sauce,,13.95,,
+Beef Dishes,3,Malaysia Style Curry Beef Brisket,,11.93,,1
+Beef Dishes,4,Diced Sirloin Steak with Black Pepper Sauce and Cashew Nuts,,13.95,,1
+Beef Dishes,5,Fresh Fruit Sweet & Sour Diced Sirloin Steak,,13.95,,
+Beef Dishes,6,"Beef with Ginger & Green Onion, Mushroom in Hot Plate",,9.95,,
+Beef Dishes,7,Beef with Black Bean Sauce,,9.95,,
+Beef Dishes,8,Wbeef with Mushroom and Green Pepper,,9.95,,
+Beef Dishes,9,Beef with Vegetable,,9.95,,
+Beef Dishes,10,Beef with Bitter Melon,,9.95,,
+Beef Dishes,11,Beef with Eggplant with Black Bean Sauce,,9.95,,
+Beef Dishes,12,Thai Style beef with Eggplant & Mushroom in Hot Plate,,10.95,,
+Beef Dishes,13,Beef and Eggplant with Garlic Hunan Sauce,,8.95,,1
+Beef Dishes,14,Diced Sirloin Steak with Cashew Nuts in Bird Nest,,13.95,,
+Beef Dishes,15,Satay Beef with Golden Mushroom & Bean Thread in Hot Pot,,9.95,,
+Beef Dishes,16,Thai Style Beef with Green Beans,,9.95,,
+Beef Dishes,17,Sliced Beef & Bean Sauce with Hot Pepper in Hot Pot,,9.95,,1
+Pork Dishes,1,Fresh Fruit Sweet and Sour Pork,,9.95,,
+Pork Dishes,2,Malaysia Green Beans with Sliced Pork,,9.95,,1
+Pork Dishes,3,Small Silver Fish with Green Beans & Sliced Pork,,10.95,,
+Pork Dishes,4,Thai Style Wind & Sand Deep Fried Pork Chop,,9.95,,
+Pork Dishes,5,Spicy Salt Pork Chop,,8.95,,1
+Pork Dishes,6,Pork Chop in Peking Sauce,,8.95,,
+Pork Dishes,7,Pork Chop with Dry Garlic Honey Sauce,,9.95,,
+Pork Dishes,8,Dry Garlic Pork Chop,,9.95,,
+Pork Dishes,9,Sliced Side Pork with Ginger & Green Onion,,9.95,,1
+Pork Dishes,10,Malaysia Style Sweet & Sour Spareribs in Hot Pot,,9.95,,1
+Pork Dishes,11,Pork Jowl with XO Sauce & King Mushroom,,13.95,,
+Vegetable Dishes,1,Stir Fried Mixed Vegetables with Tofu,,8.95,,
+Vegetable Dishes,2,Assirted Mushrooms with Eggplant,,9.95,,
+Vegetable Dishes,3,Lettuce with Chill Preserved Bean Curd Sauce,,9.95,,
+Vegetable Dishes,4,Baby Bak Choy with Cordyceps Flower,,12.95,,
+Vegetable Dishes,5,Sauteed or Garlic with Chinese Broccoli,,8.95,,
+Vegetable Dishes,6,Spicy Salt Deep Fried Diced Tofu,,6.95,,1
+Vegetable Dishes,7,Spicy Salt Green Beans,,8.95,,1
+Vegetable Dishes,8,Malasia Style Green Beans,,9.95,,1
+Vegetable Dishes,9,Oyster Sauce Vegetable,,8.95,,
+Vegetable Dishes,10,Garlic or sauteed Stir Fried Pea Pod Leaf,,11.95,,
+Vegetable Dishes,11,Stir Fried King Mushroom with Pea Pod Leaf,,13.95,,
+Vegetable Dishes,12,Minced Pork Stir Fried Tofu,Braised Bean Curd & Minced Pork with Spicy Salt,7.95,,1
+Vegetable Dishes,13,Malaysia Style Deep Fried Diced Tofu,,9.95,,1
+Vegetable Dishes,14,Thai Style Fried Diced Chicken & Seafood Tofu,,9.95,,1
+Vegetable Dishes,15,Malaysia Style Vegetarian Dishes,,9.95,,1
+Noodles,1,Thai Pad Thai with Chicken & Shrimp,,8.95,,
+Noodles,2,Tantalizing Special Seafood with Rice Vermicelli,,10.95,,
+Noodles,3,Malaysia Curry Chicken & Shrimp Rice Noodle,,8.95,,1
+Noodles,4,Assorted Mushrooms & Vegetables Shanghai Style,,9.95,,
+Noodles,5,Fried Thick Noodle Shanghai Style,,8.95,,
+Noodles,6,Fried Rice Noodle with Beef & Soy Sauce,,8.95,,
+Noodles,7,Beef with Black Bean Sauce Rice Noodle or Egg Noodle,,8.95,,
+Noodles,8,Shredded Pork Rice Noodle or Egg Noodle,,8.95,,
+Noodles,9,Malaysia Satay Sauce with Shrimp & Chicken Rice Noodle,,9.95,,1
+Noodles,10,Bean Sprout Fried Egg Noodle,,8.95,,
+Noodles,11,Singapore Rice Vermicelli,,8.95,,1
+Noodles,12,Rice Vermicelli in Sweet & Sour Sauce,,8.95,,
+Noodles,13,Braised E-Fu Noodle with Mushroom,,8.95,,
+Noodles,14,Malaysia Style Rice Noodle,,8.95,,1
+Noodles,15,Cantonese Chow Men / Lo Mein,,11.95,,
+Noodles,16,Seafood Chow Mein / Lo Mein,,12.95,,
+Noodles,17,Shrimp Chow Mein / Lo Mein,,10.95,,
+Noodles,18,Beef Chow Mein / Lo Mein,,8.95,,
+Noodles,19,Chicken Chow Mein / Lo Mein,,8.95,,
+Rice Dishes,1,Thai Style Shrimp & Chicken Fried Rice,,9.95,,
+Rice Dishes,2,Pineapple Seafood Fried Rice,,9.95,,
+Rice Dishes,3,Seafood with Dry Garlic Fried Rice,,10.95,,
+Rice Dishes,4,Malaysia Style Hainanese Chicken Rice (with bone),,9.95,,1
+Rice Dishes,5,Spicy Soft-shell Crab Fried Rice,,12.95,,1
+Rice Dishes,6,Shrimp & Chicken Fried Rice in Cream & Tomato Sauce,,11.95,,
+Rice Dishes,7,Thai Style Cashew Nut Shrimp & Chicken Fried Rice,,10.95,,1
+Rice Dishes,8,Shrimp & Chicken Fried Rice in Cream & Tomato Sauce,,8.95,,
+Rice Dishes,9,Beef Fried Rice Cantonese Style,,7.95,,
+Rice Dishes,10,Chicken Fried Rice Cantonese Style,,7.95,,
+Rice Dishes,11,Shrimp Fried Rice Cantonese Style,,7.95,,
+Rice Dishes,12,Malaysia Style Minced Beef Fried Rice,,7.95,,1
+Rice Dishes,13,Dry Scallop & Egg White Fried Rice with Red & White Rice,,12.95,,
+Rice Dishes,14,Seafood Rice Soup,,10.95,,
+Dinner For One,D1,Beef with Broccoli,,9.95,,
+Dinner For One,D2,Chicken with Broccoli,,9.95,,
+Dinner For One,D3,General Tao's Chicken,,9.95,,1
+Dinner For One,D4,Chicken with Cashew Nuts & Vegetables,,9.95,,
+Dinner For One,D5,Fresh Fruit Sweet and Sour Chicken,,9.95,,
+Dinner For One,D6,Fresh Fruit Sweet and Sour Pork,,9.95,,
+Dinner For One,D7,Thai Style Mango Chicken,,9.95,,
+Dinner For One,D8,Thai Style Mango Fish Fillet,,9.95,,
+Dinner For One,D9,Malaysia Style Curry Chicken,,9.95,,1
+Dinner For One,D10,Beef with Black Bean Sauce,,9.95,,
+Dinner For One,D11,Chicken with Black Bean Sauce,,9.95,,
+Dinner For One,D12,Shrimp and Vegetables,,9.95,,
+Dinner For One,D13,Beef with Mushroom & Black Pepper Sauce,,9.95,,1
+Dinner For One,D14,Chicken with Mushroom & Black Pepper Sauce,,9.95,,1
+Dinner For One,D15,Diced Chicken with Hot Bean Sauce,,9.95,,1
+Dinner For One,D16,Assorted Mushroom with Fried Tofu & Vegetable,"Vegetable Soup, Vegetable Spring Roll & 
+Vegetable Fried Rice",9.95,,
+Dinner,1,Dinner for Two,"Spring Rolls
+Thai Style Mango Chicken
+Stir Fried Mixed Vegetables
+Thai Style Fried Rice",23.95,,
+Dinner,2,Dinner for Three,"Spring Rolls
+Breaded Shrimps
+Thai Style Mango Chicken
+Stir Fried Mixed Vegetables
+Thai Style Fried Rice ",30.95,,
+Dinner,3,Dinner for Four,"Chicken Corn Soup 
+Spring Rolls
+Breaded Shrimps
+Stir Fried Mixed Vegetables
+Beef with Mushroom and Green Pepper
+Thai Style Mango Fillet
+Thai Style Fried Rice ",49.95,,
+Dinner,4,Dinner for Five,"Chicken Corn Soup 
+Spring Rolls
+Thai Style Mango Fish Fillet
+Breaded Shrimps
+Thai Style Wind & Sand Deep Fried Pork Chop
+Black Pepper Sauce with Beef and Cashew Nuts
+Stir Fried Mixed Vegetables
+Thai Style Fried Rice ",63.95,,
+Dinner,5,Dinner for Six,"Chicken Corn Soup
+Spring Rolls
+Malaysia Style Sweet & Sour Spareribs
+Thai Style Wind & Sand Deep Fried Pork Chop
+Thai Style Mango Chicken
+Malaysia Style Curry Beef
+Assorted Mushrooms with Eggplant
+Breaded Shrimps
+Thai Style Fried Rice",77.95,,

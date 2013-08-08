@@ -1,0 +1,23 @@
+<?php
+
+class Database{
+	private $_strName;
+	private $_link;
+	
+	function Database($strDatabase){
+		$this->_strName = $strDatabase;
+		$_link = mysqli_connect("localhost","root", "",$strDatabase) or die("Error " . mysqli_error($link));
+		
+	}
+	
+	function query($strSQL){
+		return mysqli_query($_this->link, $strSQL);
+	}
+	
+	function fetch_row($rsResult){
+		return mysqli_fetch_assoc($rsResult);
+	}
+
+}
+
+?>

@@ -1,0 +1,77 @@
+html {width:100%;
+		min-width:1016px;
+		height:100%;
+		padding:0px;
+		margin:0;}
+
+body {width:100%;
+			min-width:1016px;
+			height:100%;
+			padding:0px;
+			margin:0;
+			background-image:url('images/back.png');
+			overflow-x:scroll;
+			overflow-y:hidden;
+			}
+
+.title {	width:100%;
+			 text-align: center;
+			 color:#AABBCC;
+			 background:#CCDDEE;} 
+			 
+.mainPane {
+			 width:100%;
+			min-width:1016px;
+			 height:90%;
+			 color:#00AA00;
+			 background:rgba(255,243,202,0.9);
+			 } 
+			 
+.spacerDiv {	width:50px;
+					height:90%;
+					background-image:url('images/vert.jpg');
+					background-repeat:repeat-y;}
+					
+.content{ width:auto; 
+			min-width:1016px;
+			height:90%; }
+
+.navigation { width:auto; 
+					min-width:1060px;
+					height:50px; 
+					background-image:url('images/hori.jpg');
+					background-repeat:repeat-x;}			 
+			 
+.bottomRight {position:absolute;
+					right:0%;
+					bottom:0%;}	
+					
+.bottomLeft {position:absolute;
+					left:0%;
+					bottom:0%;}
+					
+.navigationTable { width:90%;
+							min-width:980px;
+							height:50px;
+							overflow-y:hidden;
+							overflow-x:scroll;
+							}		 
+
+.navigationImage {height:40px; width:auto;}
+							
+.flR {float:right;}
+.flL {float:left;}
+.clB {clear:both;}
+
+.aC {text-align:center;}
+			 		 
+.stripPadding {padding:0px;
+					margin:0;  }
+					 
+					 
+.troubleshoot{color:#ABCDEF;
+			 background:#123456;} 
+			 
+.troubleshootp{color:#123456;
+			 background:#ABCDEF;} 
+			 
