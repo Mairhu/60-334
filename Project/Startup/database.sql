@@ -24,16 +24,16 @@ DROP TABLE IF EXISTS `dbRestaurant`.`tblMenuItem` ;
 
 CREATE  TABLE IF NOT EXISTS `dbRestaurant`.`tblMenuItem` (
   `intMenuItemID` INT NOT NULL AUTO_INCREMENT ,
-  `intMenuNumber` INT NOT NULL ,
-  `strMenuItemName` VARCHAR(200) NOT NULL ,
+  `intMenuNumber` VARCHAR(5) NOT NULL ,
+  `txtMenuItemName` TEXT NOT NULL ,
   `txtDescription` TEXT NOT NULL ,
   `intMenuCategoryID` INT NOT NULL ,
   `dblPrice` DOUBLE NOT NULL ,
-  `tblMenuItemcol` VARCHAR(45) NOT NULL ,
   `strSize` VARCHAR(45) NULL DEFAULT NULL ,
+  `blnSpicy` TINYINT(1) DEFAULT NULL,
   PRIMARY KEY (`intMenuItemID`) ,
   CONSTRAINT `fk_menuItem1`
-    FOREIGN KEY (`intMenuItemID` )
+    FOREIGN KEY (`intMenuCategoryID` )
     REFERENCES `dbRestaurant`.`tblMenuCategory` (`intMenuCategoryID` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
@@ -66,8 +66,9 @@ CREATE  TABLE IF NOT EXISTS `dbRestaurant`.`tblUser` (
   `strPassword` VARCHAR(60) NOT NULL ,
   `strPhone` VARCHAR(15) NOT NULL ,
   `intUserType` INT NOT NULL ,
-  `dtmLastLogin` DATETIME NOT NULL ,
+  `dtmLastLogin` DATETIME ,
   `dtmCreatedOn` DATETIME NOT NULL ,
+  `intCreatedBy` INT ,
   `intModifiedBy` INT NULL ,
   `dtmModifiedOn` DATETIME NULL ,
   PRIMARY KEY (`intUserID`) ,
@@ -80,6 +81,11 @@ CREATE  TABLE IF NOT EXISTS `dbRestaurant`.`tblUser` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_user2`
+    FOREIGN KEY (`intCreatedBy` )
+    REFERENCES `dbRestaurant`.`tblUser` (`intUserID` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_user3`
     FOREIGN KEY (`intModifiedBy` )
     REFERENCES `dbRestaurant`.`tblUser` (`intUserID` )
     ON DELETE NO ACTION
@@ -300,6 +306,9 @@ INSERT INTO tblUserType (intUserTypeID, strUserTypeName)
 VALUES (1, "Owner"), (2, "Administrator"), 
 			 (3, 'Forum Moderator'), (4, "General User");
 
-INSERT INTO tblUser (strFirstName, strLastName, strEmail,
-									)
+INSERT INTO tblUser (strFirstName, strLastName, strEmail, strUserName,
+									strPassword, strPhone, intUserType,
+									dtmCreatedOn)
+VALUES ("Admin","Admin", "admin@test.com", "Admin", SHA1('admin'), "519-999-9999", 1, NOW() ),
+			("Ping", "Yong", "yongp@uwindsor.ca", "pyong", SHA1('yongp'), "519-562-8031", 2, NOW());
 									

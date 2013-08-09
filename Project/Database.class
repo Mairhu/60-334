@@ -6,18 +6,25 @@ class Database{
 	
 	function Database($strDatabase){
 		$this->_strName = $strDatabase;
-		$_link = mysqli_connect("localhost","root", "",$strDatabase) or die("Error " . mysqli_error($link));
+		$this->_link = mysqli_connect("localhost","root", "",$strDatabase) or die("Error " . mysqli_error($link));
 		
 	}
 	
 	function query($strSQL){
-		return mysqli_query($_this->link, $strSQL);
+		return mysqli_query($this->_link, $strSQL);
 	}
 	
 	function fetch_row($rsResult){
 		return mysqli_fetch_assoc($rsResult);
+	}	
+	
+	function sanitize($strContent){
+		return "'" . mysqli_real_escape_string( $this->_link, $strContent) . "'";
 	}
-
+	
+	function displayError(){
+		return mysqli_error($this->_link);
+	}
 }
 
 ?>

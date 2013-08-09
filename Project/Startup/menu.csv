@@ -1,4 +1,4 @@
-Category,Number,Name,Description,Price,Size,Spicy
+strCategory,intMenuNumber,txtMenuItemName,txtDescription,dblPrice,strSize,blnSpicy
 Appetizer,1,Thai style Mango Sauce Deep Fried Tofu,,6.95,,
 Appetizer,2,Thai Style Deep Fried Chicken Wings (12 pcs),,7.95,,
 Appetizer,3,Deep Fried Chicken Wings with Honey Garlic Sauce (12 pcs),,8.95,,
