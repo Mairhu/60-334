@@ -1,5 +1,40 @@
 <?php
 include_once("constants.php");
+require_once("formElement.class");
+
+session_start();
+$invalid_log = FALSE;
+
+// Process the username field...
+if (array_key_exists('username', $_POST))
+{
+  // Remember this username...
+  $_SESSION['username'] = $_POST['username'];
+
+  // Check if credit card name is from 1 to 30 chars and alnum or space...
+  if (preg_match('/^[A-Za-z0-9 ]{1,30}$/', $_POST['username']) != 1)
+  {
+    $invalid_log = TRUE;
+    // Credit card name is invalid, so store session error message...
+    $_SESSION['username'] = <<<ZZEOF
+Credit card names can only have alphabetic, numeric, or spaces characters and must have at least 1 character and no more than 30 characters.
+ZZEOF;
+  }
+}
+
+// Process the password field...
+if (array_key_exists('password', $_POST))
+{
+  // Remember this username...
+  $_SESSION['password'] = $_POST['password'];
+
+}
+
+// Send
+if (array_key_exists('strTextID', $_POST))
+{
+	mail('fake@fake.com', 'My Subject', $_POST['strTextID']);
+}
 
 function setupButtons($arrUse){
 	$strHTML = "";
@@ -33,12 +68,27 @@ else{
 
 $objPage = new $strPage();
 
-if(!isset($_SESSION["blnIsLoggedIn"])){
+if(isset($_SESSION["blnIsLoggedIn"])){
 	$arrUse = $arrLoginPages;
 }
 else{
 	$arrUse = $arrGuestPages;
 }
+
+// Log in the user if they successfully logged in
+if(array_key_exists('strPassword.err', $_SESSION) || array_key_exists('strUsername.err', $_SESSION))
+{
+	$arrUse = $arrGuestPages;
+	echo "Login name or password is not valid.";
+}
+else if (array_key_exists('strPassword', $_SESSION) && array_key_exists('strUsername', $_SESSION))
+{
+	$arrUse = $arrLoginPages;
+}
+
+if($invalid_log)
+	echo "Login name or password is not valid.";
+	
 ?>
 
 <!DOCTYPE html>
@@ -67,6 +117,10 @@ else{
 			<div class="spacerDiv flR">
 				<img class="bottomRight" src="images/rb.jpg"/>
 			</div>
+			<?php
+				if (array_key_exists('username', $_POST) && array_key_exists('password', $_POST))
+					echo "Welcome " . $_POST['username'];
+			?>
 		</div>
 	</body>
 </html>

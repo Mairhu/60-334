@@ -1,18 +1,13 @@
 html {width:100%;
-		min-width:1016px;
 		height:100%;
 		padding:0px;
 		margin:0;}
 
 body {width:100%;
-			min-width:1016px;
 			height:100%;
 			padding:0px;
 			margin:0;
-			background-image:url('images/back.png');
-			overflow-x:scroll;
-			overflow-y:hidden;
-			}
+			background-image:url('images/back.png');}
 
 .title {	width:100%;
 			 text-align: center;
@@ -21,7 +16,6 @@ body {width:100%;
 			 
 .mainPane {
 			 width:100%;
-			min-width:1016px;
 			 height:90%;
 			 color:#00AA00;
 			 background:rgba(255,243,202,0.9);
@@ -32,12 +26,9 @@ body {width:100%;
 					background-image:url('images/vert.jpg');
 					background-repeat:repeat-y;}
 					
-.content{ width:auto; 
-			min-width:1016px;
-			height:90%; }
+.content{ width:auto; height:90%; }
 
 .navigation { width:auto; 
-					min-width:1060px;
 					height:50px; 
 					background-image:url('images/hori.jpg');
 					background-repeat:repeat-x;}			 
@@ -51,13 +42,12 @@ body {width:100%;
 					bottom:0%;}
 					
 .navigationTable { width:90%;
-							min-width:980px;
 							height:50px;
-							overflow-y:hidden;
-							overflow-x:scroll;
+							overflow:hidden;
 							}		 
 
 .navigationImage {height:40px; width:auto;}
+
 							
 .flR {float:right;}
 .flL {float:left;}
@@ -74,4 +64,22 @@ body {width:100%;
 			 
 .troubleshootp{color:#123456;
 			 background:#ABCDEF;} 
+
+.toright{float: right;
+}			 
 			 
+.box{width: 75%;
+	margin: auto auto auto auto;
+	background-color: #CCFF00;
+    border-radius: 10px;
+	padding: 0.5em;
+	opacity: 0.7;
+}
+
+.outerbox {
+	width: 80%;
+	margin: auto auto auto auto;
+	border-style:solid;
+	border-width:5px;
+	padding: 0.5em;
+}

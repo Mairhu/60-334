@@ -1,9 +1,5 @@
 <?php
 
-/*Database Constants*/
-
-define("strDatabase", 		"dbRestaurant");
-
 $arrPageNames = array( "defaultPage" => "Main",
 										"aboutUs"=>"About Us",
 										"menu" => "View Menu",
@@ -30,9 +26,9 @@ $arrLoginPages = array(strIMAGE_HOME=>null,
 									strIMAGE_ABOUT_US => "aboutUs",
 									strIMAGE_MENU => "menu",
 									strIMAGE_ONLINE => "online",
+									strIMAGE_LOGOUT => "logout",
 									strIMAGE_FORUM => "forum",
-									strIMAGE_CONTACT => "contactUs",
-									strIMAGE_LOGOUT => "logout"
+									strIMAGE_CONTACT => "contactUs"
 									);
 
 $arrGuestPages = array(strIMAGE_HOME=>null,

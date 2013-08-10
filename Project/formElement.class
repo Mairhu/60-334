@@ -284,7 +284,7 @@ class button extends formElement{
 		if(isset($this->_strAction)){
 			$strHTML .= " action=\"" . $this->_strAction . "\"";
 		}
-		if(isset($this->strMethod)){
+		if(isset($this->_strMethod)){
 			$strHTML .= " method=\"" . $this->_strMethod . "\"";
 		}
 		$strHTML .= " />";
