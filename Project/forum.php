@@ -1,6 +1,14 @@
 <?php
 
 include_once("constants.php");
+    
+// Determine if user is logged in or not
+if(empty($_SESSION['strUsername']) || empty($_SESSION['strPassword']))
+{
+	// If they are not, redirect user to the login page
+	header("Location: main.php?strPage=login");
+	die("Redirecting to main.php?strPage=login");
+} 
 
 class forum{
 	private $_strText;

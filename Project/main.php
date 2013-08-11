@@ -96,6 +96,10 @@ if($invalid_log)
 	<head>
 		<title>Tantalizing Asian Cuisine - Page <?= $arrPageNames[$strPage]?></title>
 		<link rel="stylesheet" type="text/css" href="common.css"/>
+		<script src="tinymce/tinymce.min.js"></script>
+		<script>
+				tinymce.init({selector:'textarea'});
+		</script>
 	</head>
 	<body>
 		<h1 class="title">Tantalizing Asian Cuisine</h1>
