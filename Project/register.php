@@ -1,14 +1,6 @@
 <?php
 include_once("constants.php");
 
-// Determine if user is logged in or not
-if(!empty($_SESSION['strUsername']) && !empty($_SESSION['strPassword']))
-{
-	// If they are, redirect user to the main page
-	header("Location: main.php");
-	die("Redirecting to main.php");
-} 
-
 class register{
 	private $_strText;
 	

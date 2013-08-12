@@ -1,5 +1,10 @@
 <?php
 
+if(isset($_POST["strFunction"])){
+	session_start();
+	$_POST["strFunction"]();
+}
+
 function getArrayDepth($array){
 	$max = 1;
 	$intDepth = 1;
@@ -24,6 +29,44 @@ function get_error_message($errorType)
 		  htmlspecialchars($_SESSION[$errorType]).'</b></font></div>';
 	}
 	return $errorMessage;
+}
+
+function updateThread(){
+	if(!isset($_POST["intThreadID"])){
+		echo "Error - No Thread";
+	}
+
+	include_once("Database.class");
+	$objDB = new Database("dbRestaurant");
+	$strSQL = "INSERT INTO tblPost 
+					SET intThreadID = " . $_POST["intThreadID"] . ","
+					. "txtContent = " . $objDB->sanitize($_POST["text"]) . ","
+					. "dtmCreatedOn = NOW(),
+					intCreatedBy = " . $objDB->sanitize($_SESSION["intUserID"]) ;
+	// echo $strSQL;
+	if($objDB->query($strSQL)){
+		echo getPosts($_POST["intThreadID"]);
+	}
+}
+
+function getPosts($intThreadID){
+	$objDB = new Database("dbRestaurant");
+	$strSQL = "SELECT strUserName, txtContent, tblPost.dtmCreatedOn
+					FROM tblPost 
+					LEFT JOIN tblUser 
+						ON intUserID = tblPost.intCreatedBy
+					WHERE intThreadID = " . $intThreadID;
+	$rsResult = $objDB->query($strSQL);
+	$strReturn = "";
+	$intCount = 0;
+	while ($arrRow = $objDB->fetch_row($rsResult)){
+		$strReturn .= "<div class=\"post" . ($intCount++)%2 . "\"><span class=\"bold\">"
+							. date("Y-m-d", strtotime($arrRow["dtmCreatedOn"])) . " - " 
+							. $arrRow["strUserName"] . ":</span><span class=\"padL4\""
+							. $arrRow["txtContent"] . "</span></div>";
+	}
+	
+	return $strReturn;
 }
 
 ?>

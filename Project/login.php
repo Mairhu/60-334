@@ -4,14 +4,6 @@
 include_once("constants.php");
 include_once("formElement.class");
 
-// Determine if user is logged in or not
-if(!empty($_SESSION['strUsername']) || !empty($_SESSION['strPassword']))
-{
-	// If they are, redirect user to the main page
-	header("Location: main.php");
-	die("Redirecting to main.php");
-} 
-
 class login{
 	private $_strText;
 	
@@ -57,6 +49,8 @@ class login{
 					. "<br/>Password: " . $objInputPassword->toHTML() . $errorPassword . "<br/>"
 					. "<br/><div class=\"toright\">" . $objButton->toHTML() . "</div></form><br/>"
 					. "<font color=\"#F00\">" .$registerMessage ."</font></div>";
+					
+					echo htmlspecialchars($objButton->toHTML());
 							
 		return $strHTML;
 	}
