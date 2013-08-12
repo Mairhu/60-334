@@ -163,7 +163,7 @@ DROP TABLE IF EXISTS `dbRestaurant`.`tblUserPageXR` ;
 
 CREATE  TABLE IF NOT EXISTS `dbRestaurant`.`tblUserPageXR` (
   `intUserTypeID` INT NOT NULL ,
-  `intPageID` INT NOT NULL ,
+  `intPageID` INT NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`intUserTypeID`, `intPageID`) ,
   INDEX `fk_UserPageXR2_idx` (`intUserTypeID` ASC) ,
   INDEX `fk_UserPageXR_idx` (`intPageID` ASC) ,
@@ -179,51 +179,22 @@ CREATE  TABLE IF NOT EXISTS `dbRestaurant`.`tblUserPageXR` (
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
-
--- -----------------------------------------------------
--- Table `dbRestaurant`.`tblForumCategory`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `dbRestaurant`.`tblForumCategory` ;
-
-CREATE  TABLE IF NOT EXISTS `dbRestaurant`.`tblForumCategory` (
-  `intFourmCategoryID` INT NOT NULL AUTO_INCREMENT ,
-  `strCategoryName` VARCHAR(100) NOT NULL ,
-  `blnActive` TINYINT(1) NOT NULL ,
-  `dtmCreatedOn` DATETIME NOT NULL ,
-  `intCreatedBy` INT NOT NULL ,
-  PRIMARY KEY (`intFourmCategoryID`) ,
-  INDEX `fk_forumCategory1_idx` (`intCreatedBy` ASC) ,
-  CONSTRAINT `fk_forumCategory1`
-    FOREIGN KEY (`intCreatedBy` )
-    REFERENCES `dbRestaurant`.`tblUser` (`intUserID` )
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
-
-
 -- -----------------------------------------------------
 -- Table `dbRestaurant`.`tblThread`
 -- -----------------------------------------------------
 DROP TABLE IF EXISTS `dbRestaurant`.`tblThread` ;
 
 CREATE  TABLE IF NOT EXISTS `dbRestaurant`.`tblThread` (
-  `intThreadID` INT NOT NULL ,
+  `intThreadID` INT NOT NULL AUTO_INCREMENT,
   `strThreadName` VARCHAR(45) NOT NULL ,
-  `intForumCategoryID` INT NOT NULL ,
   `blnActive` TINYINT(1) NOT NULL ,
   `dtmCreatedOn` DATETIME NOT NULL ,
   `intCreatedBy` INT NOT NULL ,
   `dtmModifiedOn` DATETIME NULL ,
   `intModfiedOn` INT NULL ,
   PRIMARY KEY (`intThreadID`) ,
-  INDEX `fk_Thread1_idx` (`intForumCategoryID` ASC) ,
   INDEX `fk_Thread3_idx` (`intModfiedOn` ASC) ,
   INDEX `fk_Thread2_idx` (`intCreatedBy` ASC) ,
-  CONSTRAINT `fk_Thread1`
-    FOREIGN KEY (`intForumCategoryID` )
-    REFERENCES `dbRestaurant`.`tblForumCategory` (`intFourmCategoryID` )
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
   CONSTRAINT `fk_Thread2`
     FOREIGN KEY (`intCreatedBy` )
     REFERENCES `dbRestaurant`.`tblUser` (`intUserID` )
@@ -243,10 +214,9 @@ ENGINE = InnoDB;
 DROP TABLE IF EXISTS `dbRestaurant`.`tblPost` ;
 
 CREATE  TABLE IF NOT EXISTS `dbRestaurant`.`tblPost` (
-  `intPostID` INT NOT NULL ,
+  `intPostID` INT NOT NULL AUTO_INCREMENT,
   `intThreadID` INT NOT NULL ,
   `txtContent` TEXT NOT NULL ,
-  `blnSubmitted` TINYINT(1) NOT NULL DEFAULT false ,
   `dtmCreatedOn` DATETIME NOT NULL ,
   `intCreatedBy` INT NOT NULL ,
   `dtmModifiedOn` DATETIME NULL ,
@@ -280,7 +250,7 @@ ENGINE = InnoDB;
 DROP TABLE IF EXISTS `dbRestaurant`.`tblMessage` ;
 
 CREATE  TABLE IF NOT EXISTS `dbRestaurant`.`tblMessage` (
-  `intMessageID` INT NOT NULL ,
+  `intMessageID` INT NOT NULL AUTO_INCREMENT,
   `strEmail` VARCHAR(100) NOT NULL ,
   `strName` VARCHAR(100) NOT NULL ,
   `txtMessage` TEXT NOT NULL ,
@@ -302,6 +272,7 @@ SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
+
 INSERT INTO tblUserType (intUserTypeID, strUserTypeName)
 VALUES (1, "Owner"), (2, "Administrator"), 
 			 (3, 'Forum Moderator'), (4, "General User");
@@ -309,6 +280,11 @@ VALUES (1, "Owner"), (2, "Administrator"),
 INSERT INTO tblUser (strFirstName, strLastName, strEmail, strUserName,
 									strPassword, strPhone, intUserType,
 									dtmCreatedOn)
-VALUES ("Admin","Admin", "admin@test.com", "Admin", SHA1('admin'), "519-999-9999", 1, NOW() ),
+VALUES ("System","System", "no-reply@test.com", "System", SHA1('system'), "519-999-9999", 1, NOW() ),
+			("Admin","Admin", "admin@test.com", "Admin", SHA1('admin'), "519-999-9999", 1, NOW() ),
 			("Ping", "Yong", "yongp@uwindsor.ca", "pyong", SHA1('yongp'), "519-562-8031", 2, NOW());
+
+INSERT INTO tblThread (strThreadName, blnActive, dtmCreatedOn,
+									 intCreatedBy)
+VALUES ("FAQ", 1, NOW(), 1), ("Ask a Question", 1, NOW(), 1), ("Suggestions", 1, NOW(), 1), ("Reviews", 1, NOW(), 1);
 									
