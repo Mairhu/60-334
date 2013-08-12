@@ -60,10 +60,12 @@ function getFormCategory(){
 				function submitPost(intThreadID){
 					var xmlhttp = new XMLHttpRequest();
 					var strPost = tinyMCE.get('strText').getContent();
-					xmlhttp.open("POST","../common.php",true);
+					xmlhttp.open("POST","../common.php", false);
 					xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 					xmlhttp.send("strFunction=updateThread&intThreadID=" + intThreadID + "&text=" + strPost);
+					// alert(xmlhttp.responseText);
 					document.getElementById("mainBody").innerHTML = (xmlhttp.responseText);
+					tinyMCE.get('strText').setContent("");
 				}
 		</script>
 	</head>
