@@ -36,6 +36,15 @@ if (array_key_exists('strTextID', $_POST))
 	mail('fake@fake.com', 'My Subject', $_POST['strTextID']);
 }
 
+//Will change the background when button is clicked.
+function changeBackground($toThis)
+{
+	if($toThis == "default")
+	{
+		
+	}
+}
+
 function setupButtons($arrUse){
 	$strHTML = "";
 	foreach($arrUse as $strImage => $page){
@@ -46,7 +55,7 @@ function setupButtons($arrUse){
 			$strGet = "";
 		}
 		$strHTML .= "<td class=\"aC\"><a href=\"main.php" . $strGet . "\">
-							<img class=\"navigationImage\" src=\"" . $strImage . "\"/></a>
+							<img class=\"navigationImage button\" src=\"" . $strImage . "\"/></a>
 							</td>";
 	}
 	return $strHTML;
@@ -122,5 +131,14 @@ if($invalid_log)
 					echo "Welcome " . $_POST['username'];
 			?>
 		</div>
+		<table class="navigationTable">
+			<tr>
+				<td>
+					<a>
+						<img src="/images/default.png" />
+					</a>
+				</td>
+			</tr>
+		</table>
 	</body>
 </html>
