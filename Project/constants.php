@@ -43,7 +43,7 @@ $arrGuestPages = array(strIMAGE_HOME=>null,
 									strIMAGE_LOGIN => "login"
 									);
 
-$arrGuestPages = array(1 => "Modify Menu",
+$arrAdminPages = array(1 => "Modify Menu",
 									2 => "Modify Threads");
 
 
