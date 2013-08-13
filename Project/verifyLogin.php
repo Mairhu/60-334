@@ -1,5 +1,7 @@
 <?php
 
+include_once("Database.class");
+
 $login_url = 'main.php?strPage=login';
 $main_url = 'main.php';
 
@@ -20,59 +22,69 @@ function url_to_redirect_to($relative_url)
 }
 
 //===========================================================================
-// Abort processing if this is not an HTTP POST request...
-if ($_SERVER['REQUEST_METHOD'] != 'POST')
-  die;
-
-
-//===========================================================================
-// Abort processing if the HTTP-Referrer header is not provided or is
-// incorrect...
-/*if (!array_key_exists('referring-page', $_SESSION))
-{
-  header('Location: '.url_to_redirect_to($login_url));
-  exit();
-}*/
-
-//===========================================================================
 // Initially assume there are no errors in processing...
 $error_flag = FALSE;
 
 // Unset any previous error messages...
-if (array_key_exists('strUsername.err', $_SESSION))
-	unset($_SESSION['strUsername.err']);
+if (array_key_exists('strUserName.err', $_SESSION))
+	unset($_SESSION['strUserName.err']);
 if(array_key_exists('strPassword.err', $_SESSION))
 	unset($_SESSION['strPassword.err']);
   
-  
   // Process the username field...
-if (array_key_exists('strUsername', $_POST))
+if (array_key_exists('strUserName', $_POST))
 {
   // Remember this username...
-  $_SESSION['strUsername'] = $_POST['strUsername'];
-
-  // Check if username is not blank...
-  if (Trim($_POST['strUsername']) == "")
-  {
-    $error_flag = TRUE;
-    // Username is invalid, so store session error message...
-    $_SESSION['strUsername.err'] = "Invalid username.";
-  }
+  $_SESSION['strUserName'] = htmlspecialchars($_POST['strUserName']);
 }
 
   // Process the password field...
 if (array_key_exists('strPassword', $_POST))
 {
   // Remember this password...
-  $_SESSION['strPassword'] = $_POST['strPassword'];
+  $_SESSION['strPassword'] = htmlspecialchars($_POST['strPassword']);
+}
 
-  // Check if password is not blank...
-  if (Trim($_POST['strPassword']) == "")
-  {
-    $error_flag = TRUE;
-    // Password is invalid, so store session error message...
-    $_SESSION['strPassword.err'] = "Invalid password.";
-  }
+// Initiate database
+$objDB = new Database("dbRestaurant");
+
+// Validate username
+$strSQL = "SELECT * FROM tblUser WHERE strUserName=".$objDB->sanitize($_SESSION['strUserName']);
+$rsResult = $objDB->query($strSQL);
+$arrRow = $objDB->fetch_row($rsResult);
+if(empty($arrRow)){
+	$_SESSION['strUserName.err'] = "User Name does not exist.";
+	unset($_SESSION['strPassword']);
+	$error_flag = TRUE;
+}
+
+// Validate password
+$strSQL = "SELECT * FROM tblUser WHERE strPassword=".$objDB->sanitize($_SESSION['strPassword']);
+$rsResult = $objDB->query($strSQL);
+$arrRow = $objDB->fetch_row($rsResult);
+if(empty($arrRow)){
+	if(!isset($_SESSION['strUserName.err']))
+		$_SESSION['strPassword.err'] = "Password is incorrect.";
+	unset($_SESSION['strPassword']);
+	$error_flag = TRUE;
+}
+
+// Login User
+if(!$error_flag){
+	$strSQL = "SELECT * FROM tblUser WHERE strUserName=".$objDB->sanitize($_SESSION['strUserName']).
+		" AND strPassword=".$objDB->sanitize($_SESSION['strPassword']);
+	$rsResult = $objDB->query($strSQL);
+	$arrRow = $objDB->fetch_row($rsResult);
+	if($arrRow["strUserName"] == $_SESSION['strUserName'] && $arrRow["strPassword"] == $_SESSION['strPassword']){
+		$_SESSION['intUserID'] = $arrRow["intUserID"];
+		$_SESSION['strFirstName'] = $arrRow["strFirstName"];
+		$_SESSION['strLastName'] = $arrRow["strLastName"];
+		$_SESSION['strEmail'] = $arrRow["strEmail"];
+		$_SESSION['strUserName'] = $arrRow["strUserName"];
+		$_SESSION['strPassword'] = $arrRow["strPassword"];
+		$_SESSION['strPhoneNumber'] = $arrRow["strPhone"];
+		$_SESSION['intUserType'] = $arrRow["intUserType"];
+	}
 }
 
 //===========================================================================

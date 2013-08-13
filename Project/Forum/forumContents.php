@@ -4,7 +4,6 @@ include_once("../formElement.class");
 include_once("../Database.class");
 include_once("../common.php");
 session_start();
-$_SESSION["intUserID"] = 1;
 $objDB = new Database("dbRestaurant");
 
 if(isset($_GET["intThreadID"])){

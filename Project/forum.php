@@ -9,7 +9,12 @@ class forum{
 	}
 	
 	function toHTML(){
-		header("Location: Forum/forumContents.php");
+		if(!isset($_SESSION['intUserID'])){
+			header("Location: main.php");
+		}
+		else{
+			header("Location: Forum/forumContents.php");
+		}
 	}
 
 }
