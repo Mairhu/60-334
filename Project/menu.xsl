@@ -24,13 +24,13 @@
 	  <thead>
 		<tr>
 		  <td>
-            <a href="&s=i" class="header">Index</a>
+            <a href="?strPage=menu&amp;s=i" class="header">Index</a>
           </td>
           <td>
-            <a href="&s=ds" class="header">Dish</a>
+            <a href="?strPage=menu&amp;s=ds" class="header">Dish</a>
           </td>
           <td>
-            <a href="&s=pr" class="header">Price</a>
+            <a href="?strPage=menu&amp;s=pr" class="header">Price</a>
           </td>
 		</tr>
 	  </thead>
@@ -57,13 +57,13 @@
 	  <thead>
 		<tr>
 		  <td>
-            <a href="&s=i" class="header">Index</a>
+            <a href="?strPage=menu&amp;s=i" class="header">Index</a>
           </td>
           <td>
-            <a href="&s=ds" class="header">Dish</a>
+            <a href="?strPage=menu&amp;s=ds" class="header">Dish</a>
           </td>
           <td>
-            <a href="&s=pr" class="header">Price</a>
+            <a href="?strPage=menu&amp;s=pr" class="header">Price</a>
           </td>
 		</tr>
 	  </thead>
@@ -90,13 +90,13 @@
 	  <thead>
 		<tr>
 		  <td>
-            <a href="&s=i" class="header">Index</a>
+            <a href="?strPage=menu&amp;s=i" class="header">Index</a>
           </td>
           <td>
-            <a href="&s=ds" class="header">Dish</a>
+            <a href="?strPage=menu&amp;s=ds" class="header">Dish</a>
           </td>
           <td>
-            <a href="&s=pr" class="header">Price</a>
+            <a href="?strPage=menu&amp;s=pr" class="header">Price</a>
           </td>
 		</tr>
 	  </thead>
@@ -123,13 +123,13 @@
 	  <thead>
 		<tr>
 		  <td>
-            <a href="&s=i" class="header">Index</a>
+            <a href="?strPage=menu&amp;s=i" class="header">Index</a>
           </td>
           <td>
-            <a href="&s=ds" class="header">Dish</a>
+            <a href="?strPage=menu&amp;s=ds" class="header">Dish</a>
           </td>
           <td>
-            <a href="&s=pr" class="header">Price</a>
+            <a href="?strPage=menu&amp;s=pr" class="header">Price</a>
           </td>
 		</tr>
 	  </thead>
@@ -156,13 +156,13 @@
 	  <thead>
 		<tr>
 		  <td>
-            <a href="&s=i" class="header">Index</a>
+            <a href="?strPage=menu&amp;s=i" class="header">Index</a>
           </td>
           <td>
-            <a href="&s=ds" class="header">Dish</a>
+            <a href="?strPage=menu&amp;s=ds" class="header">Dish</a>
           </td>
           <td>
-            <a href="&s=pr" class="header">Price</a>
+            <a href="?strPage=menu&amp;s=pr" class="header">Price</a>
           </td>
 		</tr>
 	  </thead>
@@ -189,13 +189,13 @@
 	  <thead>
 		<tr>
 		  <td>
-            <a href="&s=i" class="header">Index</a>
+            <a href="?strPage=menu&amp;s=i" class="header">Index</a>
           </td>
           <td>
-            <a href="&s=ds" class="header">Dish</a>
+            <a href="?strPage=menu&amp;s=ds" class="header">Dish</a>
           </td>
           <td>
-            <a href="&s=pr" class="header">Price</a>
+            <a href="?strPage=menu&amp;s=pr" class="header">Price</a>
           </td>
 		</tr>
 	  </thead>
@@ -222,13 +222,13 @@
 	  <thead>
 		<tr>
 		  <td>
-            <a href="&s=i" class="header">Index</a>
+            <a href="?strPage=menu&amp;s=i" class="header">Index</a>
           </td>
           <td>
-            <a href="&s=ds" class="header">Dish</a>
+            <a href="?strPage=menu&amp;s=ds" class="header">Dish</a>
           </td>
           <td>
-            <a href="&s=pr" class="header">Price</a>
+            <a href="?strPage=menu&amp;s=pr" class="header">Price</a>
           </td>
 		</tr>
 	  </thead>
@@ -255,13 +255,13 @@
 	  <thead>
 		<tr>
 		  <td>
-            <a href="&s=i" class="header">Index</a>
+            <a href="?strPage=menu&amp;s=i" class="header">Index</a>
           </td>
           <td>
-            <a href="&s=ds" class="header">Dish</a>
+            <a href="?strPage=menu&amp;s=ds" class="header">Dish</a>
           </td>
           <td>
-            <a href="&s=pr" class="header">Price</a>
+            <a href="?strPage=menu&amp;s=pr" class="header">Price</a>
           </td>
 		</tr>
 	  </thead>
@@ -288,13 +288,13 @@
 	  <thead>
 		<tr>
 		  <td>
-            <a href="&s=i" class="header">Index</a>
+            <a href="?strPage=menu&amp;s=i" class="header">Index</a>
           </td>
           <td>
-            <a href="&s=ds" class="header">Dish</a>
+            <a href="?strPage=menu&amp;s=ds" class="header">Dish</a>
           </td>
           <td>
-            <a href="&s=pr" class="header">Price</a>
+            <a href="?strPage=menu&amp;s=pr" class="header">Price</a>
           </td>
 		</tr>
 	  </thead>
@@ -321,13 +321,13 @@
 	  <thead>
 		<tr>
 		  <td>
-            <a href="&s=i" class="header">Index</a>
+            <a href="?strPage=menu&amp;s=i" class="header">Index</a>
           </td>
           <td>
-            <a href="&s=ds" class="header">Dish</a>
+            <a href="?strPage=menu&amp;s=ds" class="header">Dish</a>
           </td>
           <td>
-            <a href="&s=pr" class="header">Price</a>
+            <a href="?strPage=menu&amp;s=pr" class="header">Price</a>
           </td>
 		</tr>
 	  </thead>
@@ -354,13 +354,13 @@
 	  <thead>
 		<tr>
 		  <td>
-            <a href="&s=i" class="header">Index</a>
+            <a href="?strPage=menu&amp;s=i" class="header">Index</a>
           </td>
           <td>
-            <a href="&s=ds" class="header">Dish</a>
+            <a href="?strPage=menu&amp;s=ds" class="header">Dish</a>
           </td>
           <td>
-            <a href="&s=pr" class="header">Price</a>
+            <a href="?strPage=menu&amp;s=pr" class="header">Price</a>
           </td>
 		</tr>
 	  </thead>
@@ -387,13 +387,13 @@
 	  <thead>
 		<tr>
 		  <td>
-            <a href="&s=i" class="header">Index</a>
+            <a href="?strPage=menu&amp;s=i" class="header">Index</a>
           </td>
           <td>
-            <a href="&s=ds" class="header">Dish</a>
+            <a href="?strPage=menu&amp;s=ds" class="header">Dish</a>
           </td>
           <td>
-            <a href="&s=pr" class="header">Price</a>
+            <a href="?strPage=menu&amp;s=pr" class="header">Price</a>
           </td>
 		</tr>
 	  </thead>
@@ -420,13 +420,13 @@
 	  <thead>
 		<tr>
 		  <td>
-            <a href="&s=i" class="header">Index</a>
+            <a href="?strPage=menu&amp;s=i" class="header">Index</a>
           </td>
           <td>
-            <a href="&s=ds" class="header">Dish</a>
+            <a href="?strPage=menu&amp;s=ds" class="header">Dish</a>
           </td>
           <td>
-            <a href="&s=pr" class="header">Price</a>
+            <a href="?strPage=menu&amp;s=pr" class="header">Price</a>
           </td>
 		</tr>
 	  </thead>

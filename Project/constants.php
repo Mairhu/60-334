@@ -30,18 +30,21 @@ $arrLoginPages = array(strIMAGE_HOME=>null,
 									strIMAGE_ABOUT_US => "aboutUs",
 									strIMAGE_MENU => "menu",
 									strIMAGE_ONLINE => "online",
-									strIMAGE_LOGOUT => "logout",
 									strIMAGE_FORUM => "forum",
-									strIMAGE_CONTACT => "contactUs"
+									strIMAGE_CONTACT => "contactUs",
+									strIMAGE_LOGOUT => "logout"
 									);
 
 $arrGuestPages = array(strIMAGE_HOME=>null,
 									strIMAGE_ABOUT_US => "aboutUs",
 									strIMAGE_MENU => "menu",
 									strIMAGE_ONLINE => "online",
-									strIMAGE_LOGIN => "login",
-									strIMAGE_CONTACT => "contactUs"
+									strIMAGE_CONTACT => "contactUs",
+									strIMAGE_LOGIN => "login"
 									);
+
+$arrGuestPages = array(1 => "Modify Menu",
+									2 => "Modify Threads");
 
 
 ?>

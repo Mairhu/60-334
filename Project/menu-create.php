@@ -18,7 +18,8 @@
     else
       $sortBy = null;
   }
-?>
+
+  ?>
 
 <h1><center>Tantalizing Asian Cuisine Menu</center></h1>
 	<?php
