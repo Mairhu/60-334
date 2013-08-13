@@ -34,7 +34,7 @@ body {width:100%;
 			 
 .mainPane {
 			 width:100%;
-			 height:85%;
+			 height:100%;
 			 color:#00AA00;
 			 background:rgba(255,243,202,0.9);
 			 } 
@@ -65,7 +65,20 @@ body {width:100%;
 .navigationTable { width:90%;
 							height:50px;
 							overflow:hidden;
-							}		 
+							}		 	
+							
+.buttonTable { width:92%;
+					height:50px;
+					position:absolute;
+					left:50px;
+					bottom:-1px;
+					background-image:url('images/hori.jpg');
+					align:center;
+							}		
+							
+.bottomBorder {
+					width:91%;
+					}							
 
 .navigationImage {height:40px; width:auto;}
 
