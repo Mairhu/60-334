@@ -47,14 +47,6 @@ if (array_key_exists('strTextID', $_POST))
 	mail('fake@fake.com', 'My Subject', $_POST['strTextID']);
 }
 
-//Will change the background when button is clicked.
-function changeBackground($toThis)
-{
-	if($toThis == "default")
-	{
-		
-	}
-}
 
 function setupButtons($arrUse){
 	$strHTML = "";
@@ -89,8 +81,6 @@ else{
 $objPage = new $strPage();
 
 //Load page depending on user login status
-if(!$invalid_log){
-
 
 if(isset($_SESSION["blnIsLoggedIn"])){
 	$arrUse = $arrLoginPages;
@@ -110,9 +100,10 @@ else if (array_key_exists('strPassword', $_SESSION) && array_key_exists('strUser
 	$arrUse = $arrLoginPages;
 }
 
-if($invalid_log)
+if($invalid_log){
 	echo "Login name or password is not valid.";
-	
+}
+
 ?>
 
 <!DOCTYPE html>
