@@ -8,45 +8,11 @@ $invalid_log = FALSE;
 
 if(array_key_exists('intUserID', $_SESSION)){
 	$loginMessage = "Welcome ".$_SESSION['strFirstName']."!";
-
 }
-
-// Process the username field...
-if (array_key_exists('username', $_POST))
-{
-  // Remember this username...
-  $_SESSION['username'] = $_POST['username'];
-
-  // Check if credit card name is from 1 to 30 chars and alnum or space...
-  if (preg_match('/^[A-Za-z0-9 ]{1,30}$/', $_POST['username']) != 1)
-  {
-    $invalid_log = TRUE;
-    // Credit card name is invalid, so store session error message...
-    $_SESSION['username'] = <<<ZZEOF
-Credit card names can only have alphabetic, numeric, or spaces characters and must have at least 1 character and no more than 30 characters.
-ZZEOF;
-  }
-}
-
 else{
 	$loginMessage = "<a href='main.php?strPage=register'>Register</a>";
 	$invalid_log = TRUE;
 }
-
-// Process the password field...
-if (array_key_exists('password', $_POST))
-{
-  // Remember this username...
-  $_SESSION['password'] = $_POST['password'];
-
-}
-
-// Send
-if (array_key_exists('strTextID', $_POST))
-{
-	mail('fake@fake.com', 'My Subject', $_POST['strTextID']);
-}
-
 
 function setupButtons($arrUse){
 	$strHTML = "";
@@ -81,27 +47,11 @@ else{
 $objPage = new $strPage();
 
 //Load page depending on user login status
-
-if(isset($_SESSION["blnIsLoggedIn"])){
+if(!$invalid_log){
 	$arrUse = $arrLoginPages;
 }
 else{
 	$arrUse = $arrGuestPages;
-}
-
-// Log in the user if they successfully logged in
-if(array_key_exists('strPassword.err', $_SESSION) || array_key_exists('strUsername.err', $_SESSION))
-{
-	$arrUse = $arrGuestPages;
-	echo "Login name or password is not valid.";
-}
-else if (array_key_exists('strPassword', $_SESSION) && array_key_exists('strUsername', $_SESSION))
-{
-	$arrUse = $arrLoginPages;
-}
-
-if($invalid_log){
-	echo "Login name or password is not valid.";
 }
 
 ?>
