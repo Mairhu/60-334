@@ -85,7 +85,13 @@ class input extends formElement{
 	}
 	
 	function toHTML(){
-		$strHTML = "<input type=\"text\" 
+		if(!isset($this->_arrAttribute["type"])){
+			$strType = "type=\"text\"";
+		}
+		else{
+			$strType = "";
+		}
+		$strHTML = "<input " . $strType . "
 							name=\"" . $this->getName() . "\"
 							id=\"" . $this->getID() . "\"
 							class=\"" . $this->getClass() . "\"

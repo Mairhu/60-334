@@ -29,6 +29,7 @@ class login{
 		$objInputPassword->setClass("box");
 		$objInputPassword->setValue("");
 		$objInputPassword->setAttribute("maxlength", 60);
+		$objInputPassword->setAttribute("type", "password");
 		
 		// Create submit button
 		$objButton = new Button("strButton", "strButtonID");

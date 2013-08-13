@@ -45,12 +45,14 @@ class register{
 		$objInputNewPassword->setClass("box");
 		$objInputNewPassword->setValue("");
 		$objInputNewPassword->setAttribute("maxlength", 60);
+		$objInputNewPassword->setAttribute("type", "password");
 		
 		// Create the verify password input box
 		$objInputVerifyPassword = new Input("strVerifyPassword", "strVerifyPasswordID");
 		$objInputVerifyPassword->setClass("box");
 		$objInputVerifyPassword->setValue("");
 		$objInputVerifyPassword->setAttribute("maxlength", 60);
+		$objInputVerifyPassword->setAttribute("type", "password");
 		
 		// Create the phone number input box
 		$objInputPhoneNumber = new Input("strPhoneNumber", "strPhoneNumberID");
