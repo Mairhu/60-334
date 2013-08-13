@@ -137,7 +137,7 @@ if($invalid_log){
 				if (array_key_exists('username', $_POST) && array_key_exists('password', $_POST))
 					echo "Welcome " . $_POST['username'];
 			?>
-			<div>
+			<div class="bottomBorder">
 				<table class="buttonTable aC">
 					<tr>
 						<td><a onclick="changeBackground('default')"><img class="navigationImage button" src="<?=strIMAGE_BKG_DEF?>" /></a></td>
