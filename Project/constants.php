@@ -21,6 +21,10 @@ define("strIMAGE_LOGIN" ,				 	"images/login.png");
 define("strIMAGE_LOGOUT" ,				 	"images/logout.png");
 define("strIMAGE_FORUM" ,				 	"images/forum.png");
 define("strIMAGE_CONTACT" ,				"images/contactUs.png");
+define("strIMAGE_BKG_DEF" ,				"images/default.png");
+define("strIMAGE_BKG_1" ,					"images/bkg1.png");
+define("strIMAGE_BKG_2" ,					"images/bkg2.png");
+define("strIMAGE_BKG_3" ,					"images/bkg3.png");
 
 $arrLoginPages = array(strIMAGE_HOME=>null,
 									strIMAGE_ABOUT_US => "aboutUs",
