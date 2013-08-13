@@ -22,11 +22,13 @@ class login{
 		$objInputUsername = new Input("strUserName", "strUserNameID");
 		$objInputUsername->setClass("box");
 		$objInputUsername->setValue("");
+		$objInputUsername->setAttribute("maxlength", 60);
 		
 		// Create password input box
 		$objInputPassword = new Input("strPassword", "strPasswordID");
 		$objInputPassword->setClass("box");
 		$objInputPassword->setValue("");
+		$objInputPassword->setAttribute("maxlength", 60);
 		
 		// Create submit button
 		$objButton = new Button("strButton", "strButtonID");
