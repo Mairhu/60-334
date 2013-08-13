@@ -20,17 +20,17 @@
 
   <xsl:template match="menu">
     <xsl:text disable-output-escaping="yes">&lt;h1>Appetizers&lt;/h1></xsl:text>
-	<table>
+	<table class="xslTable">
 	  <thead>
 		<tr>
 		  <td>
-            <a href="?s=i" class="header">Index</a>
+            <a href="&s=i" class="header">Index</a>
           </td>
           <td>
-            <a href="?s=ds" class="header">Dish</a>
+            <a href="&s=ds" class="header">Dish</a>
           </td>
           <td>
-            <a href="?s=pr" class="header">Price</a>
+            <a href="&s=pr" class="header">Price</a>
           </td>
 		</tr>
 	  </thead>
@@ -53,17 +53,17 @@
 	</table>
 	
 	<xsl:text disable-output-escaping="yes">&lt;h1>Soups&lt;/h1></xsl:text>
-	<table>
+	<table class="xslTable">
 	  <thead>
 		<tr>
 		  <td>
-            <a href="?s=i" class="header">Index</a>
+            <a href="&s=i" class="header">Index</a>
           </td>
           <td>
-            <a href="?s=ds" class="header">Dish</a>
+            <a href="&s=ds" class="header">Dish</a>
           </td>
           <td>
-            <a href="?s=pr" class="header">Price</a>
+            <a href="&s=pr" class="header">Price</a>
           </td>
 		</tr>
 	  </thead>
@@ -86,17 +86,17 @@
 	</table>
   
   <xsl:text disable-output-escaping="yes">&lt;h1>Noodle Soups&lt;/h1></xsl:text>
-	<table>
+	<table class="xslTable">
 	  <thead>
 		<tr>
 		  <td>
-            <a href="?s=i" class="header">Index</a>
+            <a href="&s=i" class="header">Index</a>
           </td>
           <td>
-            <a href="?s=ds" class="header">Dish</a>
+            <a href="&s=ds" class="header">Dish</a>
           </td>
           <td>
-            <a href="?s=pr" class="header">Price</a>
+            <a href="&s=pr" class="header">Price</a>
           </td>
 		</tr>
 	  </thead>
@@ -119,17 +119,17 @@
 	</table>
   
 	<xsl:text disable-output-escaping="yes">&lt;h1>Chicken Dishes&lt;/h1></xsl:text>
-	<table>
+	<table class="xslTable">
 	  <thead>
 		<tr>
 		  <td>
-            <a href="?s=i" class="header">Index</a>
+            <a href="&s=i" class="header">Index</a>
           </td>
           <td>
-            <a href="?s=ds" class="header">Dish</a>
+            <a href="&s=ds" class="header">Dish</a>
           </td>
           <td>
-            <a href="?s=pr" class="header">Price</a>
+            <a href="&s=pr" class="header">Price</a>
           </td>
 		</tr>
 	  </thead>
@@ -152,17 +152,17 @@
 	</table>
   
 	<xsl:text disable-output-escaping="yes">&lt;h1>Beef Dishes&lt;/h1></xsl:text>
-	<table>
+	<table class="xslTable">
 	  <thead>
 		<tr>
 		  <td>
-            <a href="?s=i" class="header">Index</a>
+            <a href="&s=i" class="header">Index</a>
           </td>
           <td>
-            <a href="?s=ds" class="header">Dish</a>
+            <a href="&s=ds" class="header">Dish</a>
           </td>
           <td>
-            <a href="?s=pr" class="header">Price</a>
+            <a href="&s=pr" class="header">Price</a>
           </td>
 		</tr>
 	  </thead>
@@ -185,17 +185,17 @@
 	</table>
   
 	<xsl:text disable-output-escaping="yes">&lt;h1>Seafood Dishes&lt;/h1></xsl:text>
-	<table>
+	<table class="xslTable">
 	  <thead>
 		<tr>
 		  <td>
-            <a href="?s=i" class="header">Index</a>
+            <a href="&s=i" class="header">Index</a>
           </td>
           <td>
-            <a href="?s=ds" class="header">Dish</a>
+            <a href="&s=ds" class="header">Dish</a>
           </td>
           <td>
-            <a href="?s=pr" class="header">Price</a>
+            <a href="&s=pr" class="header">Price</a>
           </td>
 		</tr>
 	  </thead>
@@ -218,17 +218,17 @@
 	</table>
   
 	<xsl:text disable-output-escaping="yes">&lt;h1>Side Orders&lt;/h1></xsl:text>
-	<table>
+	<table class="xslTable">
 	  <thead>
 		<tr>
 		  <td>
-            <a href="?s=i" class="header">Index</a>
+            <a href="&s=i" class="header">Index</a>
           </td>
           <td>
-            <a href="?s=ds" class="header">Dish</a>
+            <a href="&s=ds" class="header">Dish</a>
           </td>
           <td>
-            <a href="?s=pr" class="header">Price</a>
+            <a href="&s=pr" class="header">Price</a>
           </td>
 		</tr>
 	  </thead>
@@ -251,17 +251,17 @@
 	</table>
   
 	<xsl:text disable-output-escaping="yes">&lt;h1>Pork Dishes&lt;/h1></xsl:text>
-	<table>
+	<table class="xslTable">
 	  <thead>
 		<tr>
 		  <td>
-            <a href="?s=i" class="header">Index</a>
+            <a href="&s=i" class="header">Index</a>
           </td>
           <td>
-            <a href="?s=ds" class="header">Dish</a>
+            <a href="&s=ds" class="header">Dish</a>
           </td>
           <td>
-            <a href="?s=pr" class="header">Price</a>
+            <a href="&s=pr" class="header">Price</a>
           </td>
 		</tr>
 	  </thead>
@@ -284,17 +284,17 @@
 	</table>
   
 	<xsl:text disable-output-escaping="yes">&lt;h1>Vegetable Dishes&lt;/h1></xsl:text>
-	<table>
+	<table class="xslTable">
 	  <thead>
 		<tr>
 		  <td>
-            <a href="?s=i" class="header">Index</a>
+            <a href="&s=i" class="header">Index</a>
           </td>
           <td>
-            <a href="?s=ds" class="header">Dish</a>
+            <a href="&s=ds" class="header">Dish</a>
           </td>
           <td>
-            <a href="?s=pr" class="header">Price</a>
+            <a href="&s=pr" class="header">Price</a>
           </td>
 		</tr>
 	  </thead>
@@ -317,17 +317,17 @@
 	</table>
   
 	<xsl:text disable-output-escaping="yes">&lt;h1>Noodles&lt;/h1></xsl:text>
-	<table>
+	<table class="xslTable">
 	  <thead>
 		<tr>
 		  <td>
-            <a href="?s=i" class="header">Index</a>
+            <a href="&s=i" class="header">Index</a>
           </td>
           <td>
-            <a href="?s=ds" class="header">Dish</a>
+            <a href="&s=ds" class="header">Dish</a>
           </td>
           <td>
-            <a href="?s=pr" class="header">Price</a>
+            <a href="&s=pr" class="header">Price</a>
           </td>
 		</tr>
 	  </thead>
@@ -350,17 +350,17 @@
 	</table>
   
 	<xsl:text disable-output-escaping="yes">&lt;h1>Rice Dishes&lt;/h1></xsl:text>
-	<table>
+	<table class="xslTable">
 	  <thead>
 		<tr>
 		  <td>
-            <a href="?s=i" class="header">Index</a>
+            <a href="&s=i" class="header">Index</a>
           </td>
           <td>
-            <a href="?s=ds" class="header">Dish</a>
+            <a href="&s=ds" class="header">Dish</a>
           </td>
           <td>
-            <a href="?s=pr" class="header">Price</a>
+            <a href="&s=pr" class="header">Price</a>
           </td>
 		</tr>
 	  </thead>
@@ -383,17 +383,17 @@
 	</table>
   
 	<xsl:text disable-output-escaping="yes">&lt;h1>Dinner For One&lt;/h1></xsl:text>
-	<table>
+	<table class="xslTable">
 	  <thead>
 		<tr>
 		  <td>
-            <a href="?s=i" class="header">Index</a>
+            <a href="&s=i" class="header">Index</a>
           </td>
           <td>
-            <a href="?s=ds" class="header">Dish</a>
+            <a href="&s=ds" class="header">Dish</a>
           </td>
           <td>
-            <a href="?s=pr" class="header">Price</a>
+            <a href="&s=pr" class="header">Price</a>
           </td>
 		</tr>
 	  </thead>
@@ -416,17 +416,17 @@
 	</table>
   
 	<xsl:text disable-output-escaping="yes">&lt;h1>Dinners For Multiples&lt;/h1></xsl:text>
-	<table>
+	<table class="xslTable">
 	  <thead>
 		<tr>
 		  <td>
-            <a href="?s=i" class="header">Index</a>
+            <a href="&s=i" class="header">Index</a>
           </td>
           <td>
-            <a href="?s=ds" class="header">Dish</a>
+            <a href="&s=ds" class="header">Dish</a>
           </td>
           <td>
-            <a href="?s=pr" class="header">Price</a>
+            <a href="&s=pr" class="header">Price</a>
           </td>
 		</tr>
 	  </thead>
