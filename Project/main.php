@@ -24,7 +24,7 @@ function setupButtons($arrUse){
 			$strGet = "";
 		}
 		$strHTML .= "<td class=\"aC\"><a href=\"main.php" . $strGet . "\">
-							<img class=\"navigationImage\" src=\"" . $strImage . "\"/></a>
+							<img class=\"navigationImage button\" src=\"" . $strImage . "\"/></a>
 							</td>";
 	}
 	return $strHTML;
@@ -82,5 +82,14 @@ else{
 				<img class="bottomRight" src="images/rb.jpg"/>
 			</div>
 		</div>
+		<table class="navigationTable">
+			<tr>
+				<td>
+					<a>
+						<img src="/images/default.png" />
+					</a>
+				</td>
+			</tr>
+		</table>
 	</body>
 </html>
