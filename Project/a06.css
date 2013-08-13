@@ -1,11 +1,17 @@
 /* Disable a tag settings unless hovering... */
-a {
+.header {
   text-decoration: none;
   color: white;
 }
 
-a:hover {
+.notHeader:hover,
+.header:hover {
   text-decoration: underline;
+}
+
+.notHeader {
+	text-decoration:none;
+	color: black;
 }
 
 /* Table is 100% of the width... */

@@ -256,777 +256,777 @@
 <size>Large</size>
 <spicy></spicy>
 </soup>
-<noodle soup>
+<noodlesoup>
 <number>1</number>
 <name>Malaysia Style Curry Chicken Rice Noodle Soup</name>
 <description></description>
 <price>7.95</price>
 <size></size>
 <spicy>1</spicy>
-</noodle soup>
-<noodle soup>
+</noodlesoup>
+<noodlesoup>
 <number>2</number>
 <name>Thai Style Shrimp and Chicken Rice Vermicelli Soup</name>
 <description></description>
 <price>7.95</price>
 <size></size>
 <spicy>1</spicy>
-</noodle soup>
-<noodle soup>
+</noodlesoup>
+<noodlesoup>
 <number>3</number>
-<name>Malaysia Style Coconut Hot & Sour Rice Noodle Soup</name>
+<name>Malaysia Style Coconut Hot and Sour Rice Noodle Soup</name>
 <description></description>
 <price>7.95</price>
 <size></size>
 <spicy>1</spicy>
-</noodle soup>
-<noodle soup>
+</noodlesoup>
+<noodlesoup>
 <number>4</number>
 <name>Beef Brisket Shanghai Noodle Soup</name>
 <description></description>
 <price>7.95</price>
 <size></size>
 <spicy></spicy>
-</noodle soup>
-<noodle soup>
+</noodlesoup>
+<noodlesoup>
 <number>5</number>
 <name>Yang Chow E-Fu Noodle Soup</name>
 <description></description>
 <price>12.95</price>
 <size>Large</size>
 <spicy></spicy>
-</noodle soup>
-<noodle soup>
+</noodlesoup>
+<noodlesoup>
 <number>6</number>
 <name>Crab Mear E-Fu Noodle Soup</name>
 <description></description>
 <price>12.95</price>
 <size>Large</size>
 <spicy></spicy>
-</noodle soup>
-<seafood dishes>
+</noodlesoup>
+<seafooddishes>
 <number>1</number>
 <name>Seafood Bird`s Nest</name>
 <description></description>
 <price>14.95</price>
 <size></size>
 <spicy></spicy>
-</seafood dishes>
-<seafood dishes>
+</seafooddishes>
+<seafooddishes>
 <number>2</number>
 <name>Mango Sauce Deep Fried Fish Fillet</name>
 <description></description>
 <price>9.95</price>
 <size></size>
 <spicy></spicy>
-</seafood dishes>
-<seafood dishes>
+</seafooddishes>
+<seafooddishes>
 <number>3</number>
 <name>Assorted Mushrooms with Fish Fillet</name>
 <description></description>
 <price>13.95</price>
 <size></size>
 <spicy></spicy>
-</seafood dishes>
-<seafood dishes>
+</seafooddishes>
+<seafooddishes>
 <number>4</number>
 <name>Deep Fried Dish Fillet with Cream Corn Sauce</name>
 <description></description>
 <price>8.95</price>
 <size></size>
 <spicy></spicy>
-</seafood dishes>
-<seafood dishes>
+</seafooddishes>
+<seafooddishes>
 <number>5</number>
-<name>Sweet & Sour Deep fried fish Fillet</name>
+<name>Sweet and Sour Deep fried fish Fillet</name>
 <description></description>
 <price>8.95</price>
 <size></size>
 <spicy></spicy>
-</seafood dishes>
-<seafood dishes>
+</seafooddishes>
+<seafooddishes>
 <number>6</number>
 <name>Fish Fillet with Spicy Salt</name>
 <description></description>
 <price>8.95</price>
 <size></size>
 <spicy></spicy>
-</seafood dishes>
-<seafood dishes>
+</seafooddishes>
+<seafooddishes>
 <number>7</number>
 <name>Thai Style Mango Sauce Shrimp</name>
 <description></description>
 <price>11.95</price>
 <size></size>
 <spicy></spicy>
-</seafood dishes>
-<seafood dishes>
+</seafooddishes>
+<seafooddishes>
 <number>8</number>
 <name>Cheese Rangoon with Deep Fried Shrimp Balls</name>
 <description></description>
 <price>13.95</price>
 <size></size>
 <spicy></spicy>
-</seafood dishes>
-<seafood dishes>
+</seafooddishes>
+<seafooddishes>
 <number>9</number>
 <name>Shrimp in Sweet Bean Sauce</name>
 <description></description>
 <price>13.95</price>
 <size></size>
 <spicy></spicy>
-</seafood dishes>
-<seafood dishes>
+</seafooddishes>
+<seafooddishes>
 <number>10</number>
 <name>Shrimp and Bitter Melon with Special Sauce</name>
 <description></description>
 <price>12.95</price>
 <size></size>
 <spicy></spicy>
-</seafood dishes>
-<seafood dishes>
+</seafooddishes>
+<seafooddishes>
 <number>11</number>
 <name>Fish Fillet with Deep Fried Tofu Hot Pot</name>
 <description></description>
 <price>8.95</price>
 <size></size>
 <spicy></spicy>
-</seafood dishes>
-<seafood dishes>
+</seafooddishes>
+<seafooddishes>
 <number>12</number>
-<name>Wind & Sand Deep Fried Shrimp</name>
+<name>Wind and Sand Deep Fried Shrimp</name>
 <description></description>
 <price>13.95</price>
 <size></size>
 <spicy></spicy>
-</seafood dishes>
-<seafood dishes>
+</seafooddishes>
+<seafooddishes>
 <number>13</number>
 <name>Mussel Cooked with White Wine</name>
 <description></description>
 <price>11.95</price>
 <size></size>
 <spicy></spicy>
-</seafood dishes>
-<seafood dishes>
+</seafooddishes>
+<seafooddishes>
 <number>14</number>
 <name>Seafood with Deep Fried Tofu Hot Pot</name>
 <description></description>
 <price>11.95</price>
 <size></size>
 <spicy></spicy>
-</seafood dishes>
-<seafood dishes>
+</seafooddishes>
+<seafooddishes>
 <number>15</number>
 <name>Spicy Salt Shrimps (No Shell)</name>
 <description></description>
 <price>11.95</price>
 <size></size>
 <spicy></spicy>
-</seafood dishes>
-<seafood dishes>
+</seafooddishes>
+<seafooddishes>
 <number>16</number>
 <name>Spicy Salt Squid</name>
 <description></description>
 <price>8.95</price>
 <size></size>
 <spicy></spicy>
-</seafood dishes>
-<seafood dishes>
+</seafooddishes>
+<seafooddishes>
 <number>17</number>
 <name>Spicy Salt Seafood</name>
 <description></description>
 <price>13.95</price>
 <size></size>
 <spicy></spicy>
-</seafood dishes>
-<seafood dishes>
+</seafooddishes>
+<seafooddishes>
 <number>18</number>
 <name>Xo Sauce Celery Seafood</name>
 <description></description>
 <price>13.95</price>
 <size></size>
 <spicy></spicy>
-</seafood dishes>
-<seafood dishes>
+</seafooddishes>
+<seafooddishes>
 <number>19</number>
 <name>Seafood with Vegetable</name>
 <description></description>
 <price>13.95</price>
 <size></size>
 <spicy></spicy>
-</seafood dishes>
-<seafood dishes>
+</seafooddishes>
+<seafooddishes>
 <number>20</number>
 <name>Shrimp and Chicken in Bird`s Nest</name>
 <description></description>
 <price>13.95</price>
 <size></size>
 <spicy></spicy>
-</seafood dishes>
-<seafood dishes>
+</seafooddishes>
+<seafooddishes>
 <number>21</number>
 <name>Coconut Cream Sauce Taro Shrimp Hot Pot</name>
 <description></description>
 <price>13.95</price>
 <size></size>
 <spicy></spicy>
-</seafood dishes>
-<seafood dishes>
+</seafooddishes>
+<seafooddishes>
 <number>22</number>
 <name>Shrimp with Scrambled Eggs</name>
 <description></description>
 <price>9.95</price>
 <size></size>
 <spicy></spicy>
-</seafood dishes>
-<seafood dishes>
+</seafooddishes>
+<seafooddishes>
 <number>23</number>
-<name>Shrimp with Giner & Green Onion in Maggi Sauce</name>
+<name>Shrimp with Giner and Green Onion in Maggi Sauce</name>
 <description></description>
 <price>11.95</price>
 <size></size>
 <spicy></spicy>
-</seafood dishes>
-<seafood dishes>
+</seafooddishes>
+<seafooddishes>
 <number>24</number>
 <name>Spicy Salt Shrimp with Shell</name>
 <description></description>
 <price>10.95</price>
 <size></size>
 <spicy></spicy>
-</seafood dishes>
-<seafood dishes>
+</seafooddishes>
+<seafooddishes>
 <number>25</number>
 <name>Shrimp and Eggplant with Garlic Hunan Sauce</name>
 <description></description>
 <price>11.95</price>
 <size></size>
 <spicy></spicy>
-</seafood dishes>
-<seafood dishes>
+</seafooddishes>
+<seafooddishes>
 <number>26</number>
 <name>Small Silver Fish with Green Beans</name>
 <description></description>
 <price>8.95</price>
 <size></size>
 <spicy></spicy>
-</seafood dishes>
-<seafood dishes>
+</seafooddishes>
+<seafooddishes>
 <number>27</number>
 <name>Deep Fried Breaded Shrimp</name>
 <description></description>
 <price>9.95</price>
 <size></size>
 <spicy></spicy>
-</seafood dishes>
-<chicken dishes>
+</seafooddishes>
+<chickendishes>
 <number>1</number>
 <name>Thai Style Mango Chicken</name>
 <description></description>
 <price>9.95</price>
 <size></size>
 <spicy></spicy>
-</chicken dishes>
-<chicken dishes>
+</chickendishes>
+<chickendishes>
 <number>2</number>
-<name>Chicken & Mushroom with Dry Garlic in Hot Plate</name>
+<name>Chicken and Mushroom with Dry Garlic in Hot Plate</name>
 <description></description>
 <price>11.95</price>
 <size></size>
 <spicy></spicy>
-</chicken dishes>
-<chicken dishes>
+</chickendishes>
+<chickendishes>
 <number>3</number>
 <name>Malaysia Style Curry Chicken (with Bone)</name>
 <description></description>
 <price>9.95</price>
 <size></size>
 <spicy>1</spicy>
-</chicken dishes>
-<chicken dishes>
+</chickendishes>
+<chickendishes>
 <number>4</number>
 <name>Spicy Chicken with Bean Sauce in Hot Plate</name>
 <description></description>
 <price>11.95</price>
 <size></size>
 <spicy>1</spicy>
-</chicken dishes>
-<chicken dishes>
+</chickendishes>
+<chickendishes>
 <number>5</number>
 <name>Chicken with Bean Sauce in Hot Pot</name>
 <description></description>
 <price>11.95</price>
 <size></size>
 <spicy></spicy>
-</chicken dishes>
-<chicken dishes>
+</chickendishes>
+<chickendishes>
 <number>6</number>
-<name>Chicken with Ginger & Honeu Pepper Sauce in Hot Pot</name>
+<name>Chicken with Ginger and Honeu Pepper Sauce in Hot Pot</name>
 <description></description>
 <price>11.95</price>
 <size></size>
 <spicy></spicy>
-</chicken dishes>
-<chicken dishes>
+</chickendishes>
+<chickendishes>
 <number>7</number>
 <name>Thai Style Basil Leaf Stir Fried Chicken</name>
 <description></description>
 <price>13.95</price>
 <size></size>
 <spicy></spicy>
-</chicken dishes>
-<chicken dishes>
+</chickendishes>
+<chickendishes>
 <number>8</number>
 <name>Sliced Chicken witn Bean Sauce Cooked in Hot Plate</name>
 <description></description>
 <price>10.95</price>
 <size></size>
 <spicy></spicy>
-</chicken dishes>
-<chicken dishes>
+</chickendishes>
+<chickendishes>
 <number>9</number>
 <name>General Tao`s Chicken</name>
 <description></description>
 <price>9.95</price>
 <size></size>
 <spicy>1</spicy>
-</chicken dishes>
-<chicken dishes>
+</chickendishes>
+<chickendishes>
 <number>10</number>
-<name>Stir Fried Chicken with Chashew Nuts & Vegetables</name>
+<name>Stir Fried Chicken with Chashew Nuts and Vegetables</name>
 <description></description>
 <price>9.95</price>
 <size></size>
 <spicy></spicy>
-</chicken dishes>
-<chicken dishes>
+</chickendishes>
+<chickendishes>
 <number>11</number>
 <name>Diced Chicken with Hot Bean Sauce</name>
 <description></description>
 <price>9.95</price>
 <size></size>
 <spicy>1</spicy>
-</chicken dishes>
-<chicken dishes>
+</chickendishes>
+<chickendishes>
 <number>12</number>
 <name>Fresh Fruit Sweet and Sour Chicken</name>
 <description></description>
 <price>9.95</price>
 <size></size>
 <spicy></spicy>
-</chicken dishes>
-<chicken dishes>
+</chickendishes>
+<chickendishes>
 <number>13</number>
 <name>Stir Fried Chicken with Vegetable</name>
 <description></description>
 <price>8.95</price>
 <size></size>
 <spicy></spicy>
-</chicken dishes>
-<chicken dishes>
+</chickendishes>
+<chickendishes>
 <number>14</number>
 <name>Chicken with Black Bean Sauce</name>
 <description></description>
 <price>8.95</price>
 <size></size>
 <spicy></spicy>
-</chicken dishes>
-<chicken dishes>
+</chickendishes>
+<chickendishes>
 <number>15</number>
-<name>Braised Chicken (with bone) & Sliced Taro in Hot Pot</name>
+<name>Braised Chicken (with bone) and Sliced Taro in Hot Pot</name>
 <description></description>
 <price>11.95</price>
 <size></size>
 <spicy></spicy>
-</chicken dishes>
-<chicken dishes>
+</chickendishes>
+<chickendishes>
 <number>16</number>
 <name>Chicken and Assorted Mushrooms with XO Sauce</name>
 <description></description>
 <price>12.95</price>
 <size></size>
 <spicy></spicy>
-</chicken dishes>
-<chicken dishes>
+</chickendishes>
+<chickendishes>
 <number>17</number>
 <name>Chicken in Bird`s Nest</name>
 <description></description>
 <price>11.95</price>
 <size></size>
 <spicy></spicy>
-</chicken dishes>
-<side order>
+</chickendishes>
+<sideorder>
 <number>1</number>
 <name>Steamed White Rice</name>
 <description></description>
 <price>1.2</price>
 <size></size>
 <spicy></spicy>
-</side order>
-<side order>
+</sideorder>
+<sideorder>
 <number>2</number>
 <name>Hainanese Rice</name>
 <description></description>
 <price>2</price>
 <size></size>
 <spicy></spicy>
-</side order>
-<side order>
+</sideorder>
+<sideorder>
 <number>3</number>
 <name>Coconut Rice</name>
 <description></description>
 <price>2</price>
 <size></size>
 <spicy></spicy>
-</side order>
-<beef dishes>
+</sideorder>
+<beefdishes>
 <number>1</number>
-<name>Diced Sirlon Steak & Mushroom with Dry Garlic in Hot Plate</name>
+<name>Diced Sirlon Steak and Mushroom with Dry Garlic in Hot Plate</name>
 <description></description>
 <price>13.95</price>
 <size></size>
 <spicy></spicy>
-</beef dishes>
-<beef dishes>
+</beefdishes>
+<beefdishes>
 <number>2</number>
 <name>Diced Sirloin Steak with Garlic Honey Pepper Sauce</name>
 <description></description>
 <price>13.95</price>
 <size></size>
 <spicy></spicy>
-</beef dishes>
-<beef dishes>
+</beefdishes>
+<beefdishes>
 <number>3</number>
 <name>Malaysia Style Curry Beef Brisket</name>
 <description></description>
 <price>11.93</price>
 <size></size>
 <spicy>1</spicy>
-</beef dishes>
-<beef dishes>
+</beefdishes>
+<beefdishes>
 <number>4</number>
 <name>Diced Sirloin Steak with Black Pepper Sauce and Cashew Nuts</name>
 <description></description>
 <price>13.95</price>
 <size></size>
 <spicy>1</spicy>
-</beef dishes>
-<beef dishes>
+</beefdishes>
+<beefdishes>
 <number>5</number>
-<name>Fresh Fruit Sweet & Sour Diced Sirloin Steak</name>
+<name>Fresh Fruit Sweet and Sour Diced Sirloin Steak</name>
 <description></description>
 <price>13.95</price>
 <size></size>
 <spicy></spicy>
-</beef dishes>
-<beef dishes>
+</beefdishes>
+<beefdishes>
 <number>6</number>
-<name>Beef with Ginger & Green Onion, Mushroom in Hot Plate</name>
+<name>Beef with Ginger and Green Onion, Mushroom in Hot Plate</name>
 <description></description>
 <price>9.95</price>
 <size></size>
 <spicy></spicy>
-</beef dishes>
-<beef dishes>
+</beefdishes>
+<beefdishes>
 <number>7</number>
 <name>Beef with Black Bean Sauce</name>
 <description></description>
 <price>9.95</price>
 <size></size>
 <spicy></spicy>
-</beef dishes>
-<beef dishes>
+</beefdishes>
+<beefdishes>
 <number>8</number>
 <name>Wbeef with Mushroom and Green Pepper</name>
 <description></description>
 <price>9.95</price>
 <size></size>
 <spicy></spicy>
-</beef dishes>
-<beef dishes>
+</beefdishes>
+<beefdishes>
 <number>9</number>
 <name>Beef with Vegetable</name>
 <description></description>
 <price>9.95</price>
 <size></size>
 <spicy></spicy>
-</beef dishes>
-<beef dishes>
+</beefdishes>
+<beefdishes>
 <number>10</number>
 <name>Beef with Bitter Melon</name>
 <description></description>
 <price>9.95</price>
 <size></size>
 <spicy></spicy>
-</beef dishes>
-<beef dishes>
+</beefdishes>
+<beefdishes>
 <number>11</number>
 <name>Beef with Eggplant with Black Bean Sauce</name>
 <description></description>
 <price>9.95</price>
 <size></size>
 <spicy></spicy>
-</beef dishes>
-<beef dishes>
+</beefdishes>
+<beefdishes>
 <number>12</number>
-<name>Thai Style beef with Eggplant & Mushroom in Hot Plate</name>
+<name>Thai Style beef with Eggplant and Mushroom in Hot Plate</name>
 <description></description>
 <price>10.95</price>
 <size></size>
 <spicy></spicy>
-</beef dishes>
-<beef dishes>
+</beefdishes>
+<beefdishes>
 <number>13</number>
 <name>Beef and Eggplant with Garlic Hunan Sauce</name>
 <description></description>
 <price>8.95</price>
 <size></size>
 <spicy>1</spicy>
-</beef dishes>
-<beef dishes>
+</beefdishes>
+<beefdishes>
 <number>14</number>
 <name>Diced Sirloin Steak with Cashew Nuts in Bird Nest</name>
 <description></description>
 <price>13.95</price>
 <size></size>
 <spicy></spicy>
-</beef dishes>
-<beef dishes>
+</beefdishes>
+<beefdishes>
 <number>15</number>
-<name>Satay Beef with Golden Mushroom & Bean Thread in Hot Pot</name>
+<name>Satay Beef with Golden Mushroom and Bean Thread in Hot Pot</name>
 <description></description>
 <price>9.95</price>
 <size></size>
 <spicy></spicy>
-</beef dishes>
-<beef dishes>
+</beefdishes>
+<beefdishes>
 <number>16</number>
 <name>Thai Style Beef with Green Beans</name>
 <description></description>
 <price>9.95</price>
 <size></size>
 <spicy></spicy>
-</beef dishes>
-<beef dishes>
+</beefdishes>
+<beefdishes>
 <number>17</number>
-<name>Sliced Beef & Bean Sauce with Hot Pepper in Hot Pot</name>
+<name>Sliced Beef and Bean Sauce with Hot Pepper in Hot Pot</name>
 <description></description>
 <price>9.95</price>
 <size></size>
 <spicy>1</spicy>
-</beef dishes>
-<pork dishes>
+</beefdishes>
+<porkdishes>
 <number>1</number>
 <name>Fresh Fruit Sweet and Sour Pork</name>
 <description></description>
 <price>9.95</price>
 <size></size>
 <spicy></spicy>
-</pork dishes>
-<pork dishes>
+</porkdishes>
+<porkdishes>
 <number>2</number>
 <name>Malaysia Green Beans with Sliced Pork</name>
 <description></description>
 <price>9.95</price>
 <size></size>
 <spicy>1</spicy>
-</pork dishes>
-<pork dishes>
+</porkdishes>
+<porkdishes>
 <number>3</number>
-<name>Small Silver Fish with Green Beans & Sliced Pork</name>
+<name>Small Silver Fish with Green Beans and Sliced Pork</name>
 <description></description>
 <price>10.95</price>
 <size></size>
 <spicy></spicy>
-</pork dishes>
-<pork dishes>
+</porkdishes>
+<porkdishes>
 <number>4</number>
-<name>Thai Style Wind & Sand Deep Fried Pork Chop</name>
+<name>Thai Style Wind and Sand Deep Fried Pork Chop</name>
 <description></description>
 <price>9.95</price>
 <size></size>
 <spicy></spicy>
-</pork dishes>
-<pork dishes>
+</porkdishes>
+<porkdishes>
 <number>5</number>
 <name>Spicy Salt Pork Chop</name>
 <description></description>
 <price>8.95</price>
 <size></size>
 <spicy>1</spicy>
-</pork dishes>
-<pork dishes>
+</porkdishes>
+<porkdishes>
 <number>6</number>
 <name>Pork Chop in Peking Sauce</name>
 <description></description>
 <price>8.95</price>
 <size></size>
 <spicy></spicy>
-</pork dishes>
-<pork dishes>
+</porkdishes>
+<porkdishes>
 <number>7</number>
 <name>Pork Chop with Dry Garlic Honey Sauce</name>
 <description></description>
 <price>9.95</price>
 <size></size>
 <spicy></spicy>
-</pork dishes>
-<pork dishes>
+</porkdishes>
+<porkdishes>
 <number>8</number>
 <name>Dry Garlic Pork Chop</name>
 <description></description>
 <price>9.95</price>
 <size></size>
 <spicy></spicy>
-</pork dishes>
-<pork dishes>
+</porkdishes>
+<porkdishes>
 <number>9</number>
-<name>Sliced Side Pork with Ginger & Green Onion</name>
+<name>Sliced Side Pork with Ginger and Green Onion</name>
 <description></description>
 <price>9.95</price>
 <size></size>
 <spicy>1</spicy>
-</pork dishes>
-<pork dishes>
+</porkdishes>
+<porkdishes>
 <number>10</number>
-<name>Malaysia Style Sweet & Sour Spareribs in Hot Pot</name>
+<name>Malaysia Style Sweet and Sour Spareribs in Hot Pot</name>
 <description></description>
 <price>9.95</price>
 <size></size>
 <spicy>1</spicy>
-</pork dishes>
-<pork dishes>
+</porkdishes>
+<porkdishes>
 <number>11</number>
-<name>Pork Jowl with XO Sauce & King Mushroom</name>
+<name>Pork Jowl with XO Sauce and King Mushroom</name>
 <description></description>
 <price>13.95</price>
 <size></size>
 <spicy></spicy>
-</pork dishes>
-<vegetable dishes>
+</porkdishes>
+<vegetabledishes>
 <number>1</number>
 <name>Stir Fried Mixed Vegetables with Tofu</name>
 <description></description>
 <price>8.95</price>
 <size></size>
 <spicy></spicy>
-</vegetable dishes>
-<vegetable dishes>
+</vegetabledishes>
+<vegetabledishes>
 <number>2</number>
 <name>Assirted Mushrooms with Eggplant</name>
 <description></description>
 <price>9.95</price>
 <size></size>
 <spicy></spicy>
-</vegetable dishes>
-<vegetable dishes>
+</vegetabledishes>
+<vegetabledishes>
 <number>3</number>
 <name>Lettuce with Chill Preserved Bean Curd Sauce</name>
 <description></description>
 <price>9.95</price>
 <size></size>
 <spicy></spicy>
-</vegetable dishes>
-<vegetable dishes>
+</vegetabledishes>
+<vegetabledishes>
 <number>4</number>
 <name>Baby Bak Choy with Cordyceps Flower</name>
 <description></description>
 <price>12.95</price>
 <size></size>
 <spicy></spicy>
-</vegetable dishes>
-<vegetable dishes>
+</vegetabledishes>
+<vegetabledishes>
 <number>5</number>
 <name>Sauteed or Garlic with Chinese Broccoli</name>
 <description></description>
 <price>8.95</price>
 <size></size>
 <spicy></spicy>
-</vegetable dishes>
-<vegetable dishes>
+</vegetabledishes>
+<vegetabledishes>
 <number>6</number>
 <name>Spicy Salt Deep Fried Diced Tofu</name>
 <description></description>
 <price>6.95</price>
 <size></size>
 <spicy>1</spicy>
-</vegetable dishes>
-<vegetable dishes>
+</vegetabledishes>
+<vegetabledishes>
 <number>7</number>
 <name>Spicy Salt Green Beans</name>
 <description></description>
 <price>8.95</price>
 <size></size>
 <spicy>1</spicy>
-</vegetable dishes>
-<vegetable dishes>
+</vegetabledishes>
+<vegetabledishes>
 <number>8</number>
 <name>Malasia Style Green Beans</name>
 <description></description>
 <price>9.95</price>
 <size></size>
 <spicy>1</spicy>
-</vegetable dishes>
-<vegetable dishes>
+</vegetabledishes>
+<vegetabledishes>
 <number>9</number>
 <name>Oyster Sauce Vegetable</name>
 <description></description>
 <price>8.95</price>
 <size></size>
 <spicy></spicy>
-</vegetable dishes>
-<vegetable dishes>
+</vegetabledishes>
+<vegetabledishes>
 <number>10</number>
 <name>Garlic or sauteed Stir Fried Pea Pod Leaf</name>
 <description></description>
 <price>11.95</price>
 <size></size>
 <spicy></spicy>
-</vegetable dishes>
-<vegetable dishes>
+</vegetabledishes>
+<vegetabledishes>
 <number>11</number>
 <name>Stir Fried King Mushroom with Pea Pod Leaf</name>
 <description></description>
 <price>13.95</price>
 <size></size>
 <spicy></spicy>
-</vegetable dishes>
-<vegetable dishes>
+</vegetabledishes>
+<vegetabledishes>
 <number>12</number>
 <name>Minced Pork Stir Fried Tofu</name>
-<description>Braised Bean Curd & Minced Pork with Spicy Salt</description>
+<description>Braised Bean Curd and Minced Pork with Spicy Salt</description>
 <price>7.95</price>
 <size></size>
 <spicy>1</spicy>
-</vegetable dishes>
-<vegetable dishes>
+</vegetabledishes>
+<vegetabledishes>
 <number>13</number>
 <name>Malaysia Style Deep Fried Diced Tofu</name>
 <description></description>
 <price>9.95</price>
 <size></size>
 <spicy>1</spicy>
-</vegetable dishes>
-<vegetable dishes>
+</vegetabledishes>
+<vegetabledishes>
 <number>14</number>
-<name>Thai Style Fried Diced Chicken & Seafood Tofu</name>
+<name>Thai Style Fried Diced Chicken and Seafood Tofu</name>
 <description></description>
 <price>9.95</price>
 <size></size>
 <spicy>1</spicy>
-</vegetable dishes>
-<vegetable dishes>
+</vegetabledishes>
+<vegetabledishes>
 <number>15</number>
 <name>Malaysia Style Vegetarian Dishes</name>
 <description></description>
 <price>9.95</price>
 <size></size>
 <spicy>1</spicy>
-</vegetable dishes>
+</vegetabledishes>
 <noodles>
 <number>1</number>
-<name>Thai Pad Thai with Chicken & Shrimp</name>
+<name>Thai Pad Thai with Chicken and Shrimp</name>
 <description></description>
 <price>8.95</price>
 <size></size>
@@ -1042,7 +1042,7 @@
 </noodles>
 <noodles>
 <number>3</number>
-<name>Malaysia Curry Chicken & Shrimp Rice Noodle</name>
+<name>Malaysia Curry Chicken and Shrimp Rice Noodle</name>
 <description></description>
 <price>8.95</price>
 <size></size>
@@ -1050,7 +1050,7 @@
 </noodles>
 <noodles>
 <number>4</number>
-<name>Assorted Mushrooms & Vegetables Shanghai Style</name>
+<name>Assorted Mushrooms and Vegetables Shanghai Style</name>
 <description></description>
 <price>9.95</price>
 <size></size>
@@ -1066,7 +1066,7 @@
 </noodles>
 <noodles>
 <number>6</number>
-<name>Fried Rice Noodle with Beef & Soy Sauce</name>
+<name>Fried Rice Noodle with Beef and Soy Sauce</name>
 <description></description>
 <price>8.95</price>
 <size></size>
@@ -1090,7 +1090,7 @@
 </noodles>
 <noodles>
 <number>9</number>
-<name>Malaysia Satay Sauce with Shrimp & Chicken Rice Noodle</name>
+<name>Malaysia Satay Sauce with Shrimp and Chicken Rice Noodle</name>
 <description></description>
 <price>9.95</price>
 <size></size>
@@ -1114,7 +1114,7 @@
 </noodles>
 <noodles>
 <number>12</number>
-<name>Rice Vermicelli in Sweet & Sour Sauce</name>
+<name>Rice Vermicelli in Sweet and Sour Sauce</name>
 <description></description>
 <price>8.95</price>
 <size></size>
@@ -1176,246 +1176,246 @@
 <size></size>
 <spicy></spicy>
 </noodles>
-<rice dishes>
+<ricedishes>
 <number>1</number>
-<name>Thai Style Shrimp & Chicken Fried Rice</name>
+<name>Thai Style Shrimp and Chicken Fried Rice</name>
 <description></description>
 <price>9.95</price>
 <size></size>
 <spicy></spicy>
-</rice dishes>
-<rice dishes>
+</ricedishes>
+<ricedishes>
 <number>2</number>
 <name>Pineapple Seafood Fried Rice</name>
 <description></description>
 <price>9.95</price>
 <size></size>
 <spicy></spicy>
-</rice dishes>
-<rice dishes>
+</ricedishes>
+<ricedishes>
 <number>3</number>
 <name>Seafood with Dry Garlic Fried Rice</name>
 <description></description>
 <price>10.95</price>
 <size></size>
 <spicy></spicy>
-</rice dishes>
-<rice dishes>
+</ricedishes>
+<ricedishes>
 <number>4</number>
 <name>Malaysia Style Hainanese Chicken Rice (with bone)</name>
 <description></description>
 <price>9.95</price>
 <size></size>
 <spicy>1</spicy>
-</rice dishes>
-<rice dishes>
+</ricedishes>
+<ricedishes>
 <number>5</number>
 <name>Spicy Soft-shell Crab Fried Rice</name>
 <description></description>
 <price>12.95</price>
 <size></size>
 <spicy>1</spicy>
-</rice dishes>
-<rice dishes>
+</ricedishes>
+<ricedishes>
 <number>6</number>
-<name>Shrimp & Chicken Fried Rice in Cream & Tomato Sauce</name>
+<name>Shrimp and Chicken Fried Rice in Cream and Tomato Sauce</name>
 <description></description>
 <price>11.95</price>
 <size></size>
 <spicy></spicy>
-</rice dishes>
-<rice dishes>
+</ricedishes>
+<ricedishes>
 <number>7</number>
-<name>Thai Style Cashew Nut Shrimp & Chicken Fried Rice</name>
+<name>Thai Style Cashew Nut Shrimp and Chicken Fried Rice</name>
 <description></description>
 <price>10.95</price>
 <size></size>
 <spicy>1</spicy>
-</rice dishes>
-<rice dishes>
+</ricedishes>
+<ricedishes>
 <number>8</number>
-<name>Shrimp & Chicken Fried Rice in Cream & Tomato Sauce</name>
+<name>Shrimp and Chicken Fried Rice in Cream and Tomato Sauce</name>
 <description></description>
 <price>8.95</price>
 <size></size>
 <spicy></spicy>
-</rice dishes>
-<rice dishes>
+</ricedishes>
+<ricedishes>
 <number>9</number>
 <name>Beef Fried Rice Cantonese Style</name>
 <description></description>
 <price>7.95</price>
 <size></size>
 <spicy></spicy>
-</rice dishes>
-<rice dishes>
+</ricedishes>
+<ricedishes>
 <number>10</number>
 <name>Chicken Fried Rice Cantonese Style</name>
 <description></description>
 <price>7.95</price>
 <size></size>
 <spicy></spicy>
-</rice dishes>
-<rice dishes>
+</ricedishes>
+<ricedishes>
 <number>11</number>
 <name>Shrimp Fried Rice Cantonese Style</name>
 <description></description>
 <price>7.95</price>
 <size></size>
 <spicy></spicy>
-</rice dishes>
-<rice dishes>
+</ricedishes>
+<ricedishes>
 <number>12</number>
 <name>Malaysia Style Minced Beef Fried Rice</name>
 <description></description>
 <price>7.95</price>
 <size></size>
 <spicy>1</spicy>
-</rice dishes>
-<rice dishes>
+</ricedishes>
+<ricedishes>
 <number>13</number>
-<name>Dry Scallop & Egg White Fried Rice with Red & White Rice</name>
+<name>Dry Scallop and Egg White Fried Rice with Red and White Rice</name>
 <description></description>
 <price>12.95</price>
 <size></size>
 <spicy></spicy>
-</rice dishes>
-<rice dishes>
+</ricedishes>
+<ricedishes>
 <number>14</number>
 <name>Seafood Rice Soup</name>
 <description></description>
 <price>10.95</price>
 <size></size>
 <spicy></spicy>
-</rice dishes>
-<dinner for one>
+</ricedishes>
+<dinnerforone>
 <number>D1</number>
 <name>Beef with Broccoli</name>
 <description></description>
 <price>9.95</price>
 <size></size>
 <spicy></spicy>
-</dinner for one>
-<dinner for one>
+</dinnerforone>
+<dinnerforone>
 <number>D2</number>
 <name>Chicken with Broccoli</name>
 <description></description>
 <price>9.95</price>
 <size></size>
 <spicy></spicy>
-</dinner for one>
-<dinner for one>
+</dinnerforone>
+<dinnerforone>
 <number>D3</number>
 <name>General Tao's Chicken</name>
 <description></description>
 <price>9.95</price>
 <size></size>
 <spicy>1</spicy>
-</dinner for one>
-<dinner for one>
+</dinnerforone>
+<dinnerforone>
 <number>D4</number>
-<name>Chicken with Cashew Nuts & Vegetables</name>
+<name>Chicken with Cashew Nuts and Vegetables</name>
 <description></description>
 <price>9.95</price>
 <size></size>
 <spicy></spicy>
-</dinner for one>
-<dinner for one>
+</dinnerforone>
+<dinnerforone>
 <number>D5</number>
 <name>Fresh Fruit Sweet and Sour Chicken</name>
 <description></description>
 <price>9.95</price>
 <size></size>
 <spicy></spicy>
-</dinner for one>
-<dinner for one>
+</dinnerforone>
+<dinnerforone>
 <number>D6</number>
 <name>Fresh Fruit Sweet and Sour Pork</name>
 <description></description>
 <price>9.95</price>
 <size></size>
 <spicy></spicy>
-</dinner for one>
-<dinner for one>
+</dinnerforone>
+<dinnerforone>
 <number>D7</number>
 <name>Thai Style Mango Chicken</name>
 <description></description>
 <price>9.95</price>
 <size></size>
 <spicy></spicy>
-</dinner for one>
-<dinner for one>
+</dinnerforone>
+<dinnerforone>
 <number>D8</number>
 <name>Thai Style Mango Fish Fillet</name>
 <description></description>
 <price>9.95</price>
 <size></size>
 <spicy></spicy>
-</dinner for one>
-<dinner for one>
+</dinnerforone>
+<dinnerforone>
 <number>D9</number>
 <name>Malaysia Style Curry Chicken</name>
 <description></description>
 <price>9.95</price>
 <size></size>
 <spicy>1</spicy>
-</dinner for one>
-<dinner for one>
+</dinnerforone>
+<dinnerforone>
 <number>D10</number>
 <name>Beef with Black Bean Sauce</name>
 <description></description>
 <price>9.95</price>
 <size></size>
 <spicy></spicy>
-</dinner for one>
-<dinner for one>
+</dinnerforone>
+<dinnerforone>
 <number>D11</number>
 <name>Chicken with Black Bean Sauce</name>
 <description></description>
 <price>9.95</price>
 <size></size>
 <spicy></spicy>
-</dinner for one>
-<dinner for one>
+</dinnerforone>
+<dinnerforone>
 <number>D12</number>
 <name>Shrimp and Vegetables</name>
 <description></description>
 <price>9.95</price>
 <size></size>
 <spicy></spicy>
-</dinner for one>
-<dinner for one>
+</dinnerforone>
+<dinnerforone>
 <number>D13</number>
-<name>Beef with Mushroom & Black Pepper Sauce</name>
+<name>Beef with Mushroom and Black Pepper Sauce</name>
 <description></description>
 <price>9.95</price>
 <size></size>
 <spicy>1</spicy>
-</dinner for one>
-<dinner for one>
+</dinnerforone>
+<dinnerforone>
 <number>D14</number>
-<name>Chicken with Mushroom & Black Pepper Sauce</name>
+<name>Chicken with Mushroom and Black Pepper Sauce</name>
 <description></description>
 <price>9.95</price>
 <size></size>
 <spicy>1</spicy>
-</dinner for one>
-<dinner for one>
+</dinnerforone>
+<dinnerforone>
 <number>D15</number>
 <name>Diced Chicken with Hot Bean Sauce</name>
 <description></description>
 <price>9.95</price>
 <size></size>
 <spicy>1</spicy>
-</dinner for one>
-<dinner for one>
+</dinnerforone>
+<dinnerforone>
 <number>D16</number>
-<name>Assorted Mushroom with Fried Tofu & Vegetable</name>
-<description>Vegetable Soup, Vegetable Spring Roll & Vegetable Fried Rice</description>
+<name>Assorted Mushroom with Fried Tofu and Vegetable</name>
+<description>Vegetable Soup, Vegetable Spring Roll and Vegetable Fried Rice</description>
 <price>9.95</price>
 <size></size>
 <spicy></spicy>
-</dinner for one>
+</dinnerforone>
 <dinner>
 <number>1</number>
 <name>Dinner for Two</name>
@@ -1460,7 +1460,7 @@ Thai Style Fried Rice</description>
 Spring Rolls
 Thai Style Mango Fish Fillet
 Breaded Shrimps
-Thai Style Wind & Sand Deep Fried Pork Chop
+Thai Style Wind and Sand Deep Fried Pork Chop
 Black Pepper Sauce with Beef and Cashew Nuts
 Stir Fried Mixed Vegetables
 Thai Style Fried Rice</description>
@@ -1473,8 +1473,8 @@ Thai Style Fried Rice</description>
 <name>Dinner for Six</name>
 <description>Chicken Corn Soup
 Spring Rolls
-Malaysia Style Sweet & Sour Spareribs
-Thai Style Wind & Sand Deep Fried Pork Chop
+Malaysia Style Sweet and Sour Spareribs
+Thai Style Wind and Sand Deep Fried Pork Chop
 Thai Style Mango Chicken
 Malaysia Style Curry Beef
 Assorted Mushrooms with Eggplant

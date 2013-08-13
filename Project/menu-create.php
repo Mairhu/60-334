@@ -7,7 +7,6 @@
     'pr' => array('tag' => 'price',        'type' => 'text'   )
   );
 
-  // Process the sort by request...
   $sortBy = null;
   if (array_key_exists('s', $_GET))
   {
@@ -21,35 +20,21 @@
   }
 ?>
 
-<html>
-	<head>
-		<title>Tantalizing Asian Cuisine Menu</title>
-        <!-- TODO: Write a <link> tag to refer to the a06.css stylesheet 
-                   here. -->
-		<link rel="stylesheet" style="text/css" href="a06.css" />
-	</head>
-	<body>
-	<h1><center>Tantalizing Asian Cuisine Menu</center><h1>
-		<?php
-			// Process the XML document...
-			$xml = new DOMDocument;
-			$xml->load('menu-data.xml');
-	
-			$xsl = new DOMDocument;
-			$xsl->load('menu.xsl');
+<h1><center>Tantalizing Asian Cuisine Menu</center></h1>
+	<?php
+		$xml = new DOMDocument;
+		$xml->load('menu-data.xml');
 
-			$proc = new XSLTProcessor();
-			$proc->importStylesheet($xsl);		
-
-			// Set the sorting parameters if $sortBy is not null...
-			if ($sortBy != null)
-			{
-				$proc->setParameter(null, 'sortby', $sortBy['tag']);
-				$proc->setParameter(null, 'type', $sortBy['type']);
-				$proc->setParameter(null, 'order', 'ascending');
-			}
-
-			echo $proc->transformToXML($xml);
-		?>
-	</body>
-</html>
+		$xsl = new DOMDocument;
+		$xsl->load('menu.xsl');
+		$proc = new XSLTProcessor();
+		$proc->importStylesheet($xsl);		
+		if ($sortBy != null)
+		{
+			$proc->setParameter(null, 'sortby', $sortBy['tag']);
+			$proc->setParameter(null, 'type', $sortBy['type']);
+			$proc->setParameter(null, 'order', 'ascending');
+		}
+		echo $proc->transformToXML($xml);
+	?>
+	<h1><a href="takeoutMenu.php" class="notHeader">Click here to place a takeout order!</a></h1>
