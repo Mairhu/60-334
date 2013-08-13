@@ -48,7 +48,8 @@ function check_valid_field($key, $value, $checkName = FALSE, $checkEmail = FALSE
 			$_SESSION[$key . '.err'] = "Invalid " . $value . ".";
 		}
 		//Check if key is valid...
-		else if($checkPhoneNumber && !is_numeric(htmlspecialchars($_POST[$key]))) {
+		else if($checkPhoneNumber && (!is_numeric(htmlspecialchars($_POST[$key])) || 
+		  intval(htmlspecialchars($_POST[$key])) < 1000000 || intval(htmlspecialchars($_POST[$key])) < 0)) {
 			$invalidField = TRUE;
 			//Key is invalid, so store session error message...
 			$_SESSION[$key . '.err'] = "Invalid " . $value . ".";
@@ -113,16 +114,18 @@ $strSQL = "SELECT strUserName FROM tblUser WHERE strUserName = ".$objDB->sanitiz
 $rsResult = $objDB->query($strSQL);
 $arrRow = $objDB->fetch_row($rsResult);
 if($arrRow['strUserName'] == $_SESSION['strNewUserName']){
-	$_SESSION['strNewUserName.err'] = "User Name in use by another account.";
+	if(!isset($_SESSION['strNewUserName.err']))
+		$_SESSION['strNewUserName.err'] = "User Name in use by another account.";
 	$error_flag = TRUE;
 }
 
-// Determine if the password already exists in the database
+// Determine if the email already exists in the database
 $strSQL = "SELECT strEmail FROM tblUser WHERE strEmail= ".$objDB->sanitize($_SESSION['strNewEmail']);
 $rsResult = $objDB->query($strSQL);
 $arrRow = $objDB->fetch_row($rsResult);
 if($arrRow['strEmail'] == $_SESSION['strNewEmail']){
-	$_SESSION['strNewEmail.err'] = "Email in use by another account.";
+	if(!isset($_SESSION['strNewEmail.err']))
+		$_SESSION['strNewEmail.err'] = "Email in use by another account.";
 	$error_flag = TRUE;
 }
 
