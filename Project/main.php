@@ -130,7 +130,6 @@ if($invalid_log){
 					<img class="bottomLeft" src="images/lb.jpg"/>
 				</div>
 				<div class="content flL"><?= $objPage->toHTML()?><?php echo $loginMessage; ?></div>
-				<div class="content flL" id="content"><?= $objPage->toHTML()?></div>
 			<div class="spacerDiv flR">
 				<img class="bottomRight" src="images/rb.jpg"/>
 			</div>
