@@ -52,8 +52,7 @@ class login{
 	
 		// Display the form in html
 		$strHTML = "<h2>Login</h2>
-					<div class=\"troubleshoot\">This is the default page for the application's website.</div>
-					<p class=\"troubleshootp\">This is the text setup with the application: " . $this->_strText . "</p>"
+					<p>" . $this->_strText . "</p>"
 					. "<form action=\"verifyLogin.php\" method=\"POST\"><div class=\"outerbox\"><br/>Username: " . $objInputUsername->toHTML() . $errorUsername . "<br/>"
 					. "<br/>Password: " . $objInputPassword->toHTML() . $errorPassword . "<br/>"
 					. "<br/><div class=\"toright\">" . $objButton->toHTML() . "</div></form><br/>"

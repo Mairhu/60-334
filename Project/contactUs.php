@@ -8,7 +8,7 @@ class contactUs{
 	private $_strText;
 	
 	function contactUs(){
-		$this->_strText = "Hi this is the constructor of the Contact Us page";
+		$this->_strText = "Comments? Questions? Let us know what you think!<br/>";
 	}
 	
 	function toHTML(){
@@ -47,8 +47,7 @@ class contactUs{
 		
 		// Display the form in html
 		$strHTML = "<h2>Contact Us</h2>
-					<div class=\"troubleshoot\">This is the default page for the application's website.</div>
-					<p class=\"troubleshootp\">This is the text setup with the application: " . $this->_strText . "</p>". 
+					<p>" . $this->_strText . "</p>". 
 					"<form action=\"verifyEmail.php\" method=\"POST\">
 						<div class=\"outerbox\"><br/>
 							Your email address:<br/>". 
