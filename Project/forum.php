@@ -9,6 +9,7 @@ class forum{
 	}
 	
 	function toHTML(){
+		// Redirect user depending on their login status
 		if(!isset($_SESSION['intUserID'])){
 			header("Location: main.php");
 		}
