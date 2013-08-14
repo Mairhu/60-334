@@ -52,11 +52,11 @@ while($arrRow){
 		$objInputOrder->setValue($_SESSION['strOrder'.$intItems]);
 	
 	$strHTML .= "<tr class=\"bg" . $intCount%2 . "\">
-								<td>" . $arrRow["intMenuNumber"] . "</td>
-								<td>" . $arrRow["txtMenuItemName"] . "</td>
-								<td>" . $arrRow["txtDescription"] . "</td>
-								<td>" . ($arrRow["blnSpicy"] ? "Spicy" : "") . "</td>
-								<td>$" . number_format($arrRow["dblPrice"],2) . "</td>
+								<td class=\"cellColumn\">" . $arrRow["intMenuNumber"] . "</td>
+								<td class=\"cellColumn\">" . $arrRow["txtMenuItemName"] . "</td>
+								<td class=\"cellColumn\">" . $arrRow["txtDescription"] . "</td>
+								<td class=\"cellColumn\">" . ($arrRow["blnSpicy"] ? "Spicy" : "") . "</td>
+								<td class=\"cellColumn\">$" . number_format($arrRow["dblPrice"],2) . "</td>
 							   <td>". $objInputOrder->toHTML() . $errorOrder ."</td>
 						</tr>";
 	$arrRow = $objDB->fetch_row($rsResult);
@@ -71,11 +71,9 @@ $_SESSION['intItems'] = $intItems;
 <html>
 	<head>
 		<title>Tantalizing Asian Cuisine - Order Online</title>
-		<script>
-			
-		</script>
+		<link rel="stylesheet" type="text/css" href="common.css"/>
 	</head>
-	<body>
+	<body class='bgOverride'>
 		<h2>Menu</h2>
 		<?=$strHTML?>
 	</body>

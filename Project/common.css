@@ -10,6 +10,15 @@ body {width:100%;
 			margin:0;
 			background-image:url('images/back.png');}
 
+.bgOverride {
+			background-image:none !important;
+			overflow: auto !important;
+}
+			
+.cellColumn {
+			width:20%;
+}
+			
 .buttonImgDef {
 			background:url('images/default.png');
 			}
