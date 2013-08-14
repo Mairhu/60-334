@@ -69,4 +69,18 @@ function getPosts($intThreadID){
 	return $strReturn;
 }
 
+function getMenuCategories(){
+	$objDB = new Database("dbRestaurant");
+	$strSQL = "SELECT intMenuCategoryID, strMenuCategoryName
+		FROM tblMenuCategory
+		ORDER BY intMenuCategoryID";
+	$rsResult = $objDB->query($strSQL);
+	$arrReturn = array();
+	while ($arrRow = $objDB->fetch_row($rsResult)){
+		$arrReturn[$arrRow["intMenuCategoryID"]] = $arrRow["strMenuCategoryName"];
+	}
+
+	return $arrReturn;
+}
+
 ?>
