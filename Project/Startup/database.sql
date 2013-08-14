@@ -24,7 +24,7 @@ DROP TABLE IF EXISTS `dbRestaurant`.`tblMenuItem` ;
 
 CREATE  TABLE IF NOT EXISTS `dbRestaurant`.`tblMenuItem` (
   `intMenuItemID` INT NOT NULL AUTO_INCREMENT ,
-  `intMenuNumber` VARCHAR(5) NOT NULL ,
+  `intMenuNumber` INT NOT NULL ,
   `txtMenuItemName` TEXT NOT NULL ,
   `txtDescription` TEXT NOT NULL ,
   `intMenuCategoryID` INT NOT NULL ,
