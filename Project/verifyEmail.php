@@ -1,16 +1,15 @@
 <?php
 // This page used to verify the information sent by the contactUs.php page
 
+// Redirect users to the contact or main page depending on success emailing
 $contactUS_url = 'main.php?strPage=contactUs';
 $main_url = 'main.php';
 
 session_start();
 
-//
 // Redirects using Location: in HTTP require the absolute URL. This function
 // computes this page's URL, strips off the file name (of this PHP script)
 // using dirname() and appends the $relative_url passed in.
-//
 function url_to_redirect_to($relative_url)
 {
   $url = 'http';
@@ -53,10 +52,6 @@ function check_valid_field($key, $value, $checkEmail = FALSE)
 	return $invalidField;
 }
 
-// Abort processing if this is not an HTTP POST request...
-if ($_SERVER['REQUEST_METHOD'] != 'POST')
-  die;
-
 // Initially assume there are no errors in processing...
 $error_flag = FALSE;
 
@@ -76,8 +71,8 @@ if(check_valid_field('strEmailAddress', 'email address', TRUE) |
 	$error_flag = TRUE;
 }
 
-// Redirect the web browser to either the form (if there were any errors) or
-// the success page (if there were no errors)...
+// Redirect the web browser to either the contact form (if there were any errors) or
+// the main page (if there were no errors)...
 header(
   'Location: '.
   ($error_flag === TRUE

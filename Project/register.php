@@ -1,4 +1,6 @@
 <?php
+// Registration page for new users
+
 include_once("constants.php");
 
 class register{
@@ -9,7 +11,7 @@ class register{
 	}
 	
 	function toHTML(){
-		// Redirect user if they are logged in
+		// Redirect user if they are already logged in
 		if(isset($_SESSION['intUserID'])){
 			header( 'Location: main.php' );
 			exit;

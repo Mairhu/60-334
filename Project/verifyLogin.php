@@ -1,17 +1,17 @@
 <?php
+// Verifies user login information and redirects them accordingly
 
 include_once("Database.class");
 
+// Redirect users to the login or main page depending on success of login
 $login_url = 'main.php?strPage=login';
 $main_url = 'main.php';
 
 session_start();
 
-//
 // Redirects using Location: in HTTP require the absolute URL. This function
 // computes this page's URL, strips off the file name (of this PHP script)
 // using dirname() and appends the $relative_url passed in.
-//
 function url_to_redirect_to($relative_url)
 {
   $url = 'http';
@@ -21,7 +21,6 @@ function url_to_redirect_to($relative_url)
     .'/'.$relative_url;
 }
 
-//===========================================================================
 // Initially assume there are no errors in processing...
 $error_flag = FALSE;
 
@@ -31,14 +30,14 @@ if (array_key_exists('strUserName.err', $_SESSION))
 if(array_key_exists('strPassword.err', $_SESSION))
 	unset($_SESSION['strPassword.err']);
   
-  // Process the username field...
+// Process the username field...
 if (array_key_exists('strUserName', $_POST))
 {
   // Remember this username...
   $_SESSION['strUserName'] = htmlspecialchars($_POST['strUserName']);
 }
 
-  // Process the password field...
+// Process the password field...
 if (array_key_exists('strPassword', $_POST))
 {
   // Remember this password...
@@ -48,7 +47,7 @@ if (array_key_exists('strPassword', $_POST))
 // Initiate database
 $objDB = new Database("dbRestaurant");
 
-// Validate username
+// Search for the username in database and verify if it exists
 $strSQL = "SELECT * FROM tblUser WHERE strUserName=".$objDB->sanitize($_SESSION['strUserName']);
 $rsResult = $objDB->query($strSQL);
 $arrRow = $objDB->fetch_row($rsResult);
@@ -58,7 +57,7 @@ if(empty($arrRow)){
 	$error_flag = TRUE;
 }
 
-// Validate password
+// Search for the password in database and verify if it exists
 $strSQL = "SELECT * FROM tblUser WHERE strPassword=".$objDB->sanitize($_SESSION['strPassword']);
 $rsResult = $objDB->query($strSQL);
 $arrRow = $objDB->fetch_row($rsResult);
@@ -69,7 +68,7 @@ if(empty($arrRow)){
 	$error_flag = TRUE;
 }
 
-// Login User
+// Login User if username and password are valid and exist
 if(!$error_flag){
 	$strSQL = "SELECT * FROM tblUser WHERE strUserName=".$objDB->sanitize($_SESSION['strUserName']).
 		" AND strPassword=".$objDB->sanitize($_SESSION['strPassword']);
@@ -87,9 +86,8 @@ if(!$error_flag){
 	}
 }
 
-//===========================================================================
-// Redirect the web browser to either the form (if there were any errors) or
-// the success page (if there were no errors)...
+// Redirect the web browser to either the login form (if there were any errors) or
+// the main page (if there were no errors)...
 header(
   'Location: '.
   ($error_flag === TRUE

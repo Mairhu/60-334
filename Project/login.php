@@ -1,5 +1,5 @@
 <?php
-// Login page
+// Login page for users
 
 include_once("constants.php");
 include_once("formElement.class");
