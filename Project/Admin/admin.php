@@ -7,6 +7,11 @@ include_once("../constants.php");
 
 session_start();
 
+// Redirect user if they are logged in
+if(!isset($_SESSION['intUserID']) || $_SESSION['intUserType'] != 1 || $_SESSION['intUserType'] != 2){
+	header( 'Location: ../main.php' );
+	exit;
+}
 
 $objDB = new Database("dbRestaurant");
 
