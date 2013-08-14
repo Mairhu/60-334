@@ -132,6 +132,7 @@ if($arrRow['strEmail'] == $_SESSION['strNewEmail']){
 // Register User
 if(!$error_flag)
 {
+	// Add the user to the database
 	$strSQL = "INSERT INTO tblUser (strFirstName, strLastName, strEmail, strUserName, strPassword, strPhone, intUserType, dtmCreatedOn) 
 	  VALUES (".$objDB->sanitize($_SESSION['strFirstName']).",".$objDB->sanitize($_SESSION['strLastName']).",".$objDB->sanitize($_SESSION['strNewEmail']).",".
 			$objDB->sanitize($_SESSION['strNewUserName']).",SHA1(".$objDB->sanitize($_SESSION['strNewPassword'])."),".$objDB->sanitize($_SESSION['strPhoneNumber']).",".
@@ -143,13 +144,13 @@ if(!$error_flag)
 	// Set the user ID
 	$strSQL = "SELECT intUserID FROM tblUser WHERE strUserName = " . $objDB->sanitize($_SESSION['strUserName']);
 	$rsResult = $objDB->query($strSQL);
-	$arrRow = $objDB->query($rsResult);
+	$arrRow = $objDB->fetch_row($rsResult);
 	$_SESSION['intUserID'] = $arrRow["intUserID"];
 	
 	// Set the user type
 	$strSQL = "SELECT intUserType FROM tblUser WHERE strUserName = " . $objDB->sanitize($_SESSION['strUserName']);
 	$rsResult = $objDB->query($strSQL);
-	$arrRow = $objDB->query($rsResult);
+	$arrRow = $objDB->fetch_row($rsResult);
 	$_SESSION['intUserType'] = $arrRow["intUserType"];
 
 }

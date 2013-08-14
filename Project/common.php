@@ -1,10 +1,12 @@
 <?php
+// Common functions available to all classes
 
 if(isset($_POST["strFunction"])){
 	session_start();
 	$_POST["strFunction"]();
 }
 
+// Returns the depth of array
 function getArrayDepth($array){
 	$max = 1;
 	$intDepth = 1;
@@ -31,6 +33,7 @@ function get_error_message($errorType)
 	return $errorMessage;
 }
 
+// Updates the current thread/database
 function updateThread(){
 	if(!isset($_POST["intThreadID"])){
 		echo "Error - No Thread";
@@ -49,6 +52,7 @@ function updateThread(){
 	}
 }
 
+// Activates the current thread
 function activateThread(){
 	if(!isset($_POST["intID"])){
 		echo "Error - No Thread";
@@ -73,6 +77,7 @@ function activateThread(){
 	}
 }
 
+// Returns posts in the thread
 function getPosts($intThreadID){
 	$objDB = new Database("dbRestaurant");
 	$strSQL = "SELECT strUserName, txtContent, tblPost.dtmCreatedOn
@@ -93,6 +98,7 @@ function getPosts($intThreadID){
 	return $strReturn;
 }
 
+// Returns menu catagories
 function getMenuCategories(){
 	$objDB = new Database("dbRestaurant");
 	$strSQL = "SELECT intMenuCategoryID, strMenuCategoryName

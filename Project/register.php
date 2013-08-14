@@ -89,8 +89,7 @@ class register{
 		
 		// Create the form in html
 		$strHTML = "<h2>Register</h2>
-					<div class=\"troubleshoot\">This is the default page for the application's website.</div>
-						<p class=\"troubleshootp\">This is the text setup with the application: " . $this->_strText . "</p>". 
+						<p>" . $this->_strText . "</p>". 
 						"<form action=\"verifyRegister.php\" method=\"POST\"><div class=\"outerbox\"><br/>".
 							"First Name: " . $objInputFirstName->toHTML() . $errorFirstName . "<br/>". 
 							"Last Name: " . $objInputLastName->toHTML() . $errorLastName . "<br/>". 

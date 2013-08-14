@@ -70,9 +70,11 @@ if(empty($arrRow)){
 
 // Login User if username and password are valid and exist
 if(!$error_flag){
+	// Determine user login information from database
 	$strSQL = "SELECT * FROM tblUser WHERE strUserName=".$objDB->sanitize($_SESSION['strUserName']) 
 				. " AND strPassword = SHA1(" . $objDB->sanitize($_SESSION["strPassword"]) . ")";
-				
+	
+	// Store user information in session
 	$rsResult = $objDB->query($strSQL);
 	$arrRow = $objDB->fetch_row($rsResult);
 	if($arrRow["strUserName"]){

@@ -1,4 +1,6 @@
 <?php
+// Main mother page
+
 include_once("constants.php");
 require_once("formElement.class");
 

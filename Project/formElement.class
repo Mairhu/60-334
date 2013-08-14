@@ -20,6 +20,7 @@ A demo of these elements can be seen by running test.php
 include_once("constants.php");
 include_once("common.php");
 
+/*Class for form element objects*/
 class formElement{
 	protected $_strName;
 	protected $_strID;
@@ -27,44 +28,54 @@ class formElement{
 	protected $_defaultValue;
 	protected $_arrAttribute;
 
+	/*constructor, requires name and id*/
 	function formElement($strName, $strID){
 		$this->_strName = $strName;
 		$this->_strID = $strID;
 		$this->_arrAttribute = array();
 	}
 	
+	//Return name of element
 	function getName(){
 		return $this->_strName;
 	}
 	
+	//Set name of element
 	function setName($strName){
 		$this->_strName = $strName;
 	}
 	
+	//Return id of element
 	function getID(){
 		return $this->_strID;
 	}
 	
+	//Set id of element
 	function setID($strID){
 		$this->_strID = $strID;
 	}	
 	
+	//Return class of this element
 	function getClass(){
 		return $this->_strClass;
 	}
 	
+	//Set class of this element
 	function setClass($strClass){
 		$this->_strClass = $strClass;
 	}		
 	
+	//Return value from this element
 	function getValue(){
 		return $this->_defaultValue;
 	}
 	
+	//Set value for this element
 	function setValue($defaultValue){
 		$this->_defaultValue = $defaultValue;
 	}	
 	
+	//Get current attribute of this element
 	function getAttribute($strAttr=null){
 		if(isset($strAttr)){
 			return $this->_arrAttribute[$strAttr];
@@ -72,12 +83,14 @@ class formElement{
 		return $this->_arrAttribute;
 	}
 	
+	//Set current attribute of this element
 	function setAttribute($strAttribute, $strValue=null){
 		$this->_arrAttribute[$strAttribute] = $strValue;
 	}
 	
 }
 
+//Class for input form
 class input extends formElement{
 	
 	function input($strName, $strID){
@@ -108,6 +121,7 @@ class input extends formElement{
 	}
 }
 
+//Class for textAreas
 class textArea extends formElement{
 
 	function textArea($strName, $strID){
@@ -132,6 +146,7 @@ class textArea extends formElement{
 	
 }
 
+//Class for dropdown
 class dropDown extends formElement{
 	private $_arrOptions;
 	private $_blnBlankOption;
@@ -190,6 +205,7 @@ class dropDown extends formElement{
 	
 }
 
+//Class for checkbox
 class checkbox extends formElement{
 	private $_blnChecked;
 
@@ -220,6 +236,7 @@ class checkbox extends formElement{
 	}
 }
 
+//Class for radio button
 class radio extends formElement{
 	private $_blnChecked;
 	
@@ -250,6 +267,7 @@ class radio extends formElement{
 	}
 }
 
+//Class for buttons
 class button extends formElement{
 	private $_strAction;
 	private $_strMethod;

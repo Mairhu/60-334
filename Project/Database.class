@@ -1,27 +1,33 @@
 <?php
 
+//Class for the database object
 class Database{
 	private $_strName;
 	private $_link;
 	
+	//Constructor of database
 	function Database($strDatabase){
 		$this->_strName = $strDatabase;
 		$this->_link = mysqli_connect("localhost","root", "",$strDatabase) or die("Error " . mysqli_error($link));
 		
 	}
 	
+	//Returns a query as string
 	function query($strSQL){
 		return mysqli_query($this->_link, $strSQL);
 	}
 	
+	//Returns row returned from a SELECT
 	function fetch_row($rsResult){
 		return mysqli_fetch_assoc($rsResult);
 	}	
 	
+	//Fixes SQL escape characters
 	function sanitize($strContent){
 		return "'" . mysqli_real_escape_string( $this->_link, $strContent) . "'";
 	}
 	
+	//Display any error messages
 	function displayError(){
 		return mysqli_error($this->_link);
 	}

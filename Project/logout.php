@@ -1,4 +1,5 @@
 <?php
+// Logout page, should never be seen by the user
 
 include_once("constants.php");
 
@@ -10,7 +11,8 @@ class logout{
 	}
 	
 	function toHTML(){
-		if(isset($_SESSION['intUserID'])){
+		// Redirect user to main
+		if(array_key_exists('intUserID', $_SESSION)){
 			session_destroy();
 		}
 		header( 'Location: main.php' );

@@ -9,7 +9,6 @@ session_start();
 // Redirect user if they are not logged in
 if(!isset($_SESSION['intUserID'])){
 	header( 'Location: ../main.php' );
-	exit;
 }
 
 // Initiate database
@@ -31,12 +30,14 @@ else{
 	$strHeading = "Welcome to the forum!";
 }
 
+// Create form objects for the form
 $objTextArea = new textArea("strText", "strText");
 $objTextArea->setClass("commentTextArea aL");
 $objButton = new button("strPost", "strPost");
 $objButton->setAttribute("onclick", "submitPost(" . $intCurrentThread . ")");
 $objButton->setValue("Submit Post");
 
+// Returns the form catagories from the database
 function getFormCategory(){
 	$objDB = new Database("dbRestaurant");
 	$strSQL = "SELECT strThreadName, intThreadID
@@ -57,6 +58,7 @@ function getFormCategory(){
 
 ?>
 
+<!-- HTML page for the forum -->
 <html>
 	<head>
 		<title>Tantalizing Asian Cuisine Forum</title>

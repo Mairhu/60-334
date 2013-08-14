@@ -1,4 +1,5 @@
 <?php
+// Admin page
 
 include_once("../formElement.class");
 include_once("../Database.class");
@@ -13,8 +14,10 @@ if(!isset($_SESSION['intUserID']) || $_SESSION['intUserType'] != 1 && $_SESSION[
 	exit;
 }
 
+// Initialize database
 $objDB = new Database("dbRestaurant");
 
+// Set up page
 if(isset($_POST["strKey"])){
 	require_once($_POST["strKey"] . ".class");
 	$strPage = $_POST["strKey"];
@@ -32,8 +35,7 @@ if($strPage != "defaultPage"){
 	$objPage = new $strPage(); 
 }
 
-
-
+// Return options for administrator
 function getOptions(){
 	GLOBAL $arrAdminPages;
 	
@@ -51,6 +53,7 @@ $strHTML = "Welcome to the admin page! To start, please choose a category";
 
 ?>
 
+<!-- HTML for admin page -->
 <html>
 	<head>
 		<title>Tantalizing Asian Cuisine Administration</title>

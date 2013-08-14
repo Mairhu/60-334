@@ -1,16 +1,14 @@
 <?php
-// This page used to verify the information sent by the contactUs.php page
+// This page used to verify the information sent by the takeoutOrder.php page
 
 $main_url = 'main.php';
 $takeoutMenu_url = 'takeoutMenu.php';
 
 session_start();
 
-//
 // Redirects using Location: in HTTP require the absolute URL. This function
 // computes this page's URL, strips off the file name (of this PHP script)
 // using dirname() and appends the $relative_url passed in.
-//
 function url_to_redirect_to($relative_url)
 {
   $url = 'http';
@@ -42,10 +40,6 @@ function check_valid_field($key, $value)
 	}
 	return $invalidField;
 }
-
-// Abort processing if this is not an HTTP POST request...
-if ($_SERVER['REQUEST_METHOD'] != 'POST')
-  die;
 
 // Initially assume there are no errors in processing...
 $error_flag = FALSE;
