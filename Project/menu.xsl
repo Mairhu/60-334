@@ -450,10 +450,12 @@
   </xsl:template>
   
   <!--BEGINNING OF THE ACTUAL TEMPLATES FOR THE DATA IN THE TABLE-->
+  <!--NOTE: the even and odd code here is taken from assignment 6.  We were-->
+  <!--originally planning on using a similar design, but decided against it-->
+  <!--near the end, and didn't remove the code due to time constraints.-->
   
   <xsl:template match="appetizer">
     <xsl:variable name="index" select="position()" />
-      <!-- TODO: Proper <tr> constructor goes here! -->
 	  <xsl:choose>
 		<!--If index is even-->
 	    <xsl:when test="($index mod 2) = 0">
@@ -472,8 +474,6 @@
 			</xsl:element>
 		</xsl:otherwise>
 	  </xsl:choose>
-      <!-- The data for the "Index" column is just the position(). I have
-           provided it for you: -->
       <td><xsl:value-of select="$index" /></td>
 	  <xsl:apply-templates select="name" />
 	  <xsl:apply-templates select="price" />
@@ -481,7 +481,6 @@
 	
   <xsl:template match="soup">
     <xsl:variable name="index" select="position()" />
-      <!-- TODO: Proper <tr> constructor goes here! -->
 	  <xsl:choose>
 		<!--If index is even-->
 	    <xsl:when test="($index mod 2) = 0">
@@ -500,8 +499,6 @@
 			</xsl:element>
 		</xsl:otherwise>
 	  </xsl:choose>
-      <!-- The data for the "Index" column is just the position(). I have
-           provided it for you: -->
       <td><xsl:value-of select="$index" /></td>
 	  <xsl:apply-templates select="name" />
 	  <xsl:apply-templates select="price" />
@@ -509,7 +506,6 @@
   
   <xsl:template match="noodlesoup">
     <xsl:variable name="index" select="position()" />
-      <!-- TODO: Proper <tr> constructor goes here! -->
 	  <xsl:choose>
 		<!--If index is even-->
 	    <xsl:when test="($index mod 2) = 0">
@@ -528,8 +524,6 @@
 			</xsl:element>
 		</xsl:otherwise>
 	  </xsl:choose>
-      <!-- The data for the "Index" column is just the position(). I have
-           provided it for you: -->
       <td><xsl:value-of select="$index" /></td>
 	  <xsl:apply-templates select="name" />
 	  <xsl:apply-templates select="price" />
@@ -537,7 +531,6 @@
   
   <xsl:template match="chickendishes">
     <xsl:variable name="index" select="position()" />
-      <!-- TODO: Proper <tr> constructor goes here! -->
 	  <xsl:choose>
 		<!--If index is even-->
 	    <xsl:when test="($index mod 2) = 0">
@@ -556,8 +549,6 @@
 			</xsl:element>
 		</xsl:otherwise>
 	  </xsl:choose>
-      <!-- The data for the "Index" column is just the position(). I have
-           provided it for you: -->
       <td><xsl:value-of select="$index" /></td>
 	  <xsl:apply-templates select="name" />
 	  <xsl:apply-templates select="price" />
@@ -565,7 +556,6 @@
   
   <xsl:template match="beefdishes">
     <xsl:variable name="index" select="position()" />
-      <!-- TODO: Proper <tr> constructor goes here! -->
 	  <xsl:choose>
 		<!--If index is even-->
 	    <xsl:when test="($index mod 2) = 0">
@@ -584,8 +574,6 @@
 			</xsl:element>
 		</xsl:otherwise>
 	  </xsl:choose>
-      <!-- The data for the "Index" column is just the position(). I have
-           provided it for you: -->
       <td><xsl:value-of select="$index" /></td>
 	  <xsl:apply-templates select="name" />
 	  <xsl:apply-templates select="price" />
@@ -593,7 +581,6 @@
   
   <xsl:template match="seafooddishes">
     <xsl:variable name="index" select="position()" />
-      <!-- TODO: Proper <tr> constructor goes here! -->
 	  <xsl:choose>
 		<!--If index is even-->
 	    <xsl:when test="($index mod 2) = 0">
@@ -612,8 +599,6 @@
 			</xsl:element>
 		</xsl:otherwise>
 	  </xsl:choose>
-      <!-- The data for the "Index" column is just the position(). I have
-           provided it for you: -->
       <td><xsl:value-of select="$index" /></td>
 	  <xsl:apply-templates select="name" />
 	  <xsl:apply-templates select="price" />
@@ -621,7 +606,6 @@
   
   <xsl:template match="sideorder">
     <xsl:variable name="index" select="position()" />
-      <!-- TODO: Proper <tr> constructor goes here! -->
 	  <xsl:choose>
 		<!--If index is even-->
 	    <xsl:when test="($index mod 2) = 0">
@@ -640,8 +624,6 @@
 			</xsl:element>
 		</xsl:otherwise>
 	  </xsl:choose>
-      <!-- The data for the "Index" column is just the position(). I have
-           provided it for you: -->
       <td><xsl:value-of select="$index" /></td>
 	  <xsl:apply-templates select="name" />
 	  <xsl:apply-templates select="price" />
@@ -649,7 +631,6 @@
   
   <xsl:template match="porkdishes">
     <xsl:variable name="index" select="position()" />
-      <!-- TODO: Proper <tr> constructor goes here! -->
 	  <xsl:choose>
 		<!--If index is even-->
 	    <xsl:when test="($index mod 2) = 0">
@@ -668,8 +649,6 @@
 			</xsl:element>
 		</xsl:otherwise>
 	  </xsl:choose>
-      <!-- The data for the "Index" column is just the position(). I have
-           provided it for you: -->
       <td><xsl:value-of select="$index" /></td>
 	  <xsl:apply-templates select="name" />
 	  <xsl:apply-templates select="price" />
@@ -677,7 +656,6 @@
   
   <xsl:template match="vegetabledishes">
     <xsl:variable name="index" select="position()" />
-      <!-- TODO: Proper <tr> constructor goes here! -->
 	  <xsl:choose>
 		<!--If index is even-->
 	    <xsl:when test="($index mod 2) = 0">
@@ -696,8 +674,6 @@
 			</xsl:element>
 		</xsl:otherwise>
 	  </xsl:choose>
-      <!-- The data for the "Index" column is just the position(). I have
-           provided it for you: -->
       <td><xsl:value-of select="$index" /></td>
 	  <xsl:apply-templates select="name" />
 	  <xsl:apply-templates select="price" />
@@ -705,7 +681,6 @@
   
   <xsl:template match="noodles">
     <xsl:variable name="index" select="position()" />
-      <!-- TODO: Proper <tr> constructor goes here! -->
 	  <xsl:choose>
 		<!--If index is even-->
 	    <xsl:when test="($index mod 2) = 0">
@@ -724,8 +699,6 @@
 			</xsl:element>
 		</xsl:otherwise>
 	  </xsl:choose>
-      <!-- The data for the "Index" column is just the position(). I have
-           provided it for you: -->
       <td><xsl:value-of select="$index" /></td>
 	  <xsl:apply-templates select="name" />
 	  <xsl:apply-templates select="price" />
@@ -733,7 +706,6 @@
   
   <xsl:template match="ricedishes">
     <xsl:variable name="index" select="position()" />
-      <!-- TODO: Proper <tr> constructor goes here! -->
 	  <xsl:choose>
 		<!--If index is even-->
 	    <xsl:when test="($index mod 2) = 0">
@@ -752,8 +724,6 @@
 			</xsl:element>
 		</xsl:otherwise>
 	  </xsl:choose>
-      <!-- The data for the "Index" column is just the position(). I have
-           provided it for you: -->
       <td><xsl:value-of select="$index" /></td>
 	  <xsl:apply-templates select="name" />
 	  <xsl:apply-templates select="price" />
@@ -761,7 +731,6 @@
   
   <xsl:template match="dinnerforone">
     <xsl:variable name="index" select="position()" />
-      <!-- TODO: Proper <tr> constructor goes here! -->
 	  <xsl:choose>
 		<!--If index is even-->
 	    <xsl:when test="($index mod 2) = 0">
@@ -780,8 +749,6 @@
 			</xsl:element>
 		</xsl:otherwise>
 	  </xsl:choose>
-      <!-- The data for the "Index" column is just the position(). I have
-           provided it for you: -->
       <td><xsl:value-of select="$index" /></td>
 	  <xsl:apply-templates select="name" />
 	  <xsl:apply-templates select="price" />
@@ -789,7 +756,6 @@
   
   <xsl:template match="dinner">
     <xsl:variable name="index" select="position()" />
-      <!-- TODO: Proper <tr> constructor goes here! -->
 	  <xsl:choose>
 		<!--If index is even-->
 	    <xsl:when test="($index mod 2) = 0">
@@ -808,8 +774,6 @@
 			</xsl:element>
 		</xsl:otherwise>
 	  </xsl:choose>
-      <!-- The data for the "Index" column is just the position(). I have
-           provided it for you: -->
       <td><xsl:value-of select="$index" /></td>
 	  <xsl:apply-templates select="name" />
 	  <xsl:apply-templates select="price" />
