@@ -1,17 +1,17 @@
 <?php
-// Verifies user registration information and redirects them accordingly
-
+// Register page
 include_once("Database.class");
 
-// Redirect users to the registration or main page depending on success of registration
 $register_url = 'main.php?strPage=register';
 $main_url = 'main.php';
 
 session_start();
 
+//
 // Redirects using Location: in HTTP require the absolute URL. This function
 // computes this page's URL, strips off the file name (of this PHP script)
 // using dirname() and appends the $relative_url passed in.
+//
 function url_to_redirect_to($relative_url)
 {
   $url = 'http';
@@ -106,7 +106,7 @@ if($_SESSION['strNewPassword'] != $_SESSION['strVerifyPassword'])
 	$error_flag = TRUE;
 }
 
-// Initiate the database
+// Add new user to the database
 $objDB = new Database("dbRestaurant");
 
 // Determine if the username already exists in the database
@@ -129,12 +129,12 @@ if($arrRow['strEmail'] == $_SESSION['strNewEmail']){
 	$error_flag = TRUE;
 }
 
-// Register User in the database provided no errors occurred
+// Register User
 if(!$error_flag)
 {
 	$strSQL = "INSERT INTO tblUser (strFirstName, strLastName, strEmail, strUserName, strPassword, strPhone, intUserType, dtmCreatedOn) 
 	  VALUES (".$objDB->sanitize($_SESSION['strFirstName']).",".$objDB->sanitize($_SESSION['strLastName']).",".$objDB->sanitize($_SESSION['strNewEmail']).",".
-			$objDB->sanitize($_SESSION['strNewUserName']).",".$objDB->sanitize($_SESSION['strNewPassword']).",".$objDB->sanitize($_SESSION['strPhoneNumber']).",".
+			$objDB->sanitize($_SESSION['strNewUserName']).",SHA1(".$objDB->sanitize($_SESSION['strNewPassword'])."),".$objDB->sanitize($_SESSION['strPhoneNumber']).",".
 			$objDB->sanitize("4").",NOW())";
 	$rsResult = $objDB->query($strSQL);
 	$_SESSION['strUserName'] = $_SESSION['strNewUserName'];
@@ -152,8 +152,8 @@ if(!$error_flag)
 
 }
 
-// Redirect the web browser to either the registration form (if there were any errors) or
-// the main page (if there were no errors)...
+// Redirect the web browser to either the form (if there were any errors) or
+// the success page (if there were no errors)...
 header(
   'Location: '.
   ($error_flag === TRUE

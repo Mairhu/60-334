@@ -1,17 +1,15 @@
 <?php
-// Registration page for new users
-
 include_once("constants.php");
 
 class register{
 	private $_strText;
 	
 	function register(){
-		$this->_strText = "You can register with the site here.<br/>";
+		$this->_strText = "You can register here.";
 	}
 	
 	function toHTML(){
-		// Redirect user if they are already logged in
+		// Redirect user if they are logged in
 		if(isset($_SESSION['intUserID'])){
 			header( 'Location: main.php' );
 			exit;
@@ -91,7 +89,8 @@ class register{
 		
 		// Create the form in html
 		$strHTML = "<h2>Register</h2>
-						<p>" . $this->_strText . "</p>". 
+					<div class=\"troubleshoot\">This is the default page for the application's website.</div>
+						<p class=\"troubleshootp\">This is the text setup with the application: " . $this->_strText . "</p>". 
 						"<form action=\"verifyRegister.php\" method=\"POST\"><div class=\"outerbox\"><br/>".
 							"First Name: " . $objInputFirstName->toHTML() . $errorFirstName . "<br/>". 
 							"Last Name: " . $objInputLastName->toHTML() . $errorLastName . "<br/>". 
