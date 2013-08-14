@@ -1,0 +1,22 @@
+<?php
+
+include_once("../constants.php");
+
+class Orders{
+	private $_strText;
+	
+	
+	function Orders(){
+		$this->_strText = "Hi this is the constructor of the about us page";
+	}
+	
+	function toHTML(){
+		$strHTML = "This page was to allow the admin to view orders that are places. 
+							We did not have time to complete this page, but the orders still 
+							save to the database.";
+		return $strHTML;
+	}
+
+}
+
+?>

@@ -3,17 +3,24 @@ include_once("constants.php");
 require_once("formElement.class");
 
 session_start();
+
+// Initialize variables
 $loginMessage = "";
 $invalid_log = FALSE;
 
+// Determine if user is logged in and display messages/links accordingly
 if(array_key_exists('intUserID', $_SESSION)){
-	$loginMessage = "Welcome ".$_SESSION['strFirstName']."!";
+	if($_SESSION['intUserType'] == 1 || $_SESSION['intUserType'] == 2){
+		$loginMessage = "/<a href='Admin/Admin.php'>Admin Page</a>";
+	}
+	$loginMessage = "Welcome ".$_SESSION['strFirstName']."!" . $loginMessage;
 }
 else{
 	$loginMessage = "<a href='main.php?strPage=register'>Register</a>";
 	$invalid_log = TRUE;
 }
 
+// Set up buttons on the page
 function setupButtons($arrUse){
 	$strHTML = "";
 	foreach($arrUse as $strImage => $page){
@@ -56,6 +63,7 @@ else{
 
 ?>
 
+<!-- HTML page -->
 <!DOCTYPE html>
 <html>
 	<head>
@@ -83,10 +91,7 @@ else{
 			<div class="spacerDiv flR">
 				<img class="bottomRight" src="images/rb.jpg"/>
 			</div>
-			<?php
-				if (array_key_exists('username', $_POST) && array_key_exists('password', $_POST))
-					echo "Welcome " . $_POST['username'];
-			?>
+			<?php echo $loginMessage; ?>
 			<div class="bottomBorder">
 				<table class="buttonTable aC">
 					<tr>

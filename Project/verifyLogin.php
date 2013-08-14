@@ -34,14 +34,14 @@ if(array_key_exists('strPassword.err', $_SESSION))
 if (array_key_exists('strUserName', $_POST))
 {
   // Remember this username...
-  $_SESSION['strUserName'] = htmlspecialchars($_POST['strUserName']);
+  $_SESSION['strUserName'] = $_POST['strUserName'];
 }
 
 // Process the password field...
 if (array_key_exists('strPassword', $_POST))
 {
   // Remember this password...
-  $_SESSION['strPassword'] = htmlspecialchars($_POST['strPassword']);
+  $_SESSION['strPassword'] = $_POST['strPassword'];
 }
 
 // Initiate database
@@ -58,7 +58,7 @@ if(empty($arrRow)){
 }
 
 // Search for the password in database and verify if it exists
-$strSQL = "SELECT * FROM tblUser WHERE strPassword=".$objDB->sanitize($_SESSION['strPassword']);
+$strSQL = "SELECT * FROM tblUser WHERE strPassword=SHA1(".$objDB->sanitize($_SESSION['strPassword']).")";
 $rsResult = $objDB->query($strSQL);
 $arrRow = $objDB->fetch_row($rsResult);
 if(empty($arrRow)){
@@ -70,11 +70,12 @@ if(empty($arrRow)){
 
 // Login User if username and password are valid and exist
 if(!$error_flag){
-	$strSQL = "SELECT * FROM tblUser WHERE strUserName=".$objDB->sanitize($_SESSION['strUserName']).
-		" AND strPassword=".$objDB->sanitize($_SESSION['strPassword']);
+	$strSQL = "SELECT * FROM tblUser WHERE strUserName=".$objDB->sanitize($_SESSION['strUserName']) 
+				. " AND strPassword = SHA1(" . $objDB->sanitize($_SESSION["strPassword"]) . ")";
+				
 	$rsResult = $objDB->query($strSQL);
 	$arrRow = $objDB->fetch_row($rsResult);
-	if($arrRow["strUserName"] == $_SESSION['strUserName'] && $arrRow["strPassword"] == $_SESSION['strPassword']){
+	if($arrRow["strUserName"]){
 		$_SESSION['intUserID'] = $arrRow["intUserID"];
 		$_SESSION['strFirstName'] = $arrRow["strFirstName"];
 		$_SESSION['strLastName'] = $arrRow["strLastName"];

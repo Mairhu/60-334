@@ -31,6 +31,30 @@ border-color:black;
 overflow-y:auto;
 }
 
+.fullWidth {
+width:100%;
+height:95% !important;
+border-style:solid;
+border-width:2px;
+border-color:black;
+}
+
+.green{
+	background-color:#00EE00;
+}
+
+.red{
+	background-color:#EE0000;
+}
+
+.bkg1{
+	background-color: #FEFEFE;
+}
+
+.bkg0{
+	background-color: #EEEEEE;
+}
+
 .commentTextArea{width:100% !important;
 							height:40% !important;
 							opacity:1.0 !important;

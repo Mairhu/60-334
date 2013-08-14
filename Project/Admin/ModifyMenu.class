@@ -1,0 +1,19 @@
+<?php
+
+include_once("../constants.php");
+
+class ModifyMenu{
+	
+	
+	function ModifyMenu(){
+	}
+	
+	function toHTML(){
+		$strHTML = "This page was to allow the admin to modify items in the menu. We did not have time to complete this page";
+							
+		return $strHTML;
+	}
+
+}
+
+?>

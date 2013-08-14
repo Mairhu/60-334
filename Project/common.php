@@ -49,6 +49,30 @@ function updateThread(){
 	}
 }
 
+function activateThread(){
+	if(!isset($_POST["intID"])){
+		echo "Error - No Thread";
+	}
+
+	if($_POST["strActivate"] == "activate"){
+		$intBool = 1;
+	}
+	
+	else{
+		$intBool = 0;
+	}
+	include_once("Database.class");
+	$objDB = new Database("dbRestaurant");
+	
+	$strSQL = "UPDATE tblThread 
+					SET blnActive = " . $objDB->sanitize($intBool) . "
+					WHERE intThreadID = " . $_POST["intID"];
+	// echo $strSQL;
+	if($objDB->query($strSQL)){
+		echo getPosts($_POST["intThreadID"]);
+	}
+}
+
 function getPosts($intThreadID){
 	$objDB = new Database("dbRestaurant");
 	$strSQL = "SELECT strUserName, txtContent, tblPost.dtmCreatedOn

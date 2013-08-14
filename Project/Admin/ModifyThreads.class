@@ -1,0 +1,53 @@
+<?php
+
+include_once("../constants.php");
+include_once("../Database.class");
+include_once("../formElement.class");
+// THIS PAGE SAVES VIA AJAX! NO SAVE BUTTON REQUIRED
+
+
+class ModifyThreads{
+	private $_objDB;
+	private $_arrThread;
+	
+	function ModifyThreads(){
+		$this->_objDB = new Database("dbRestaurant");
+		$this->getThreadArray();
+	}
+	
+	function getThreadArray(){
+		$strSQL = "SELECT * FROM tblThread";
+		$rsResult = $this->_objDB->query($strSQL);
+		$this->_arrThread = array();
+		
+		while($arrRow = $this->_objDB->fetch_row($rsResult)){
+			foreach($arrRow as $key=>$val){
+				$this->_arrThread[$arrRow["intThreadID"]][$key] = $val;
+			}
+		}
+	}
+	
+	function toHTML(){
+		$strHTML = "<table class=\"fullWidth\">
+							<th>Name</th>
+							<th>Created On</th>
+							<th>Activate / Deactivate</th>";
+		$intCount = 0;
+		
+		foreach($this->_arrThread as $id=>$arrInfo){
+			$strClass = ($arrInfo["blnActive"] ? "green" : "red");
+			
+			$strHTML .= "<tr class=\"bkg" . $intCount%2 . "\">
+									<td>" . $arrInfo["strThreadName"] . "</td>
+									<td>" . $arrInfo["dtmCreatedOn"] . "</td>
+									<td onclick=\"updateThread(" . $arrInfo["intThreadID"] . ")\" id=\"active" . $arrInfo["intThreadID"] . "\" class=\"" . $strClass . "\" >&nbsp;</td>
+								</tr>";
+			$intCount ++;
+		}
+		
+		return $strHTML . "</table>";
+	}
+
+}
+
+?>

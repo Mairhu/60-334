@@ -143,12 +143,14 @@ if(!$error_flag)
 	// Set the user ID
 	$strSQL = "SELECT intUserID FROM tblUser WHERE strUserName = " . $objDB->sanitize($_SESSION['strUserName']);
 	$rsResult = $objDB->query($strSQL);
-	$_SESSION['intUserID'] = intval($rsResult);
+	$arrRow = $objDB->query($rsResult);
+	$_SESSION['intUserID'] = $arrRow["intUserID"];
 	
 	// Set the user type
 	$strSQL = "SELECT intUserType FROM tblUser WHERE strUserName = " . $objDB->sanitize($_SESSION['strUserName']);
 	$rsResult = $objDB->query($strSQL);
-	$_SESSION['intUserType'] = intval($rsResult);
+	$arrRow = $objDB->query($rsResult);
+	$_SESSION['intUserType'] = $arrRow["intUserType"];
 
 }
 
