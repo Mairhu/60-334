@@ -11,9 +11,9 @@ class defaultpage{
 	}
 	
 	function toHTML(){
-		$strHTML = "<h2>Default Page</h2>
-							<div class=\"troubleshoot\">This is the default page for the application's website.</div>
-							<p class=\"troubleshootp\">This is the text setup with the application: " . $this->_strText . "</p>";
+		$strHTML = "<h2>Welcome to Tantalizing Asian Cuisine!</h2>
+							<div>We serve some of the best Malaysian, Thai, and Chinese food in the area.  Feel free to check out our menu.</div>
+							<p>We now have a takeout option available right on our website, check it out!!!</p>";
 							
 		return $strHTML;
 	}
