@@ -7,8 +7,8 @@ include_once("../constants.php");
 
 session_start();
 
-// Redirect user if they are logged in
-if(!isset($_SESSION['intUserID']) || $_SESSION['intUserType'] != 1 || $_SESSION['intUserType'] != 2){
+// Redirect user if they are not logged in or have wrong security permissions
+if(!isset($_SESSION['intUserID']) || $_SESSION['intUserType'] != 1 && $_SESSION['intUserType'] != 2){
 	header( 'Location: ../main.php' );
 	exit;
 }
@@ -63,6 +63,7 @@ $strHTML = "Welcome to the admin page! To start, please choose a category";
 		<div id="navigation" class="flL">
 			<h2 class="padL5">Options</h2>
 				<?= getOptions();?>
+			<a href="../main.php">Back to Home</a>
 		</div>
 		<div id="forumContent" >
 			<div id="mainBody"  class="flR aL">

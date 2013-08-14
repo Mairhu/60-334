@@ -1,11 +1,21 @@
 <?php
+// Forum page
 
 include_once("../formElement.class");
 include_once("../Database.class");
 include_once("../common.php");
 session_start();
+
+// Redirect user if they are not logged in
+if(!isset($_SESSION['intUserID'])){
+	header( 'Location: ../main.php' );
+	exit;
+}
+
+// Initiate database
 $objDB = new Database("dbRestaurant");
 
+// Retrieve query information if the thread is set
 if(isset($_GET["intThreadID"])){
 	$intCurrentThread = $_GET["intThreadID"];
 	$strHidden = "";
@@ -73,6 +83,7 @@ function getFormCategory(){
 		<div id="navigation" class="flL">
 			<h2 class="padL5">Categories</h2>
 			<?= getFormCategory();?>
+			<a href="../main.php">Back to Home</a>
 		</div>
 		<div id="forumContent" >
 			<div id="mainBody"  class="flR aL">
